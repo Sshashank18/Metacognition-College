@@ -16,15 +16,18 @@ html,body{
 
 .box{
     background-image:url('Images/back2.jpg');
-    background-color: rgb(241, 205, 137);
-    background-blend-mode: lighten;
+    background-color: rgb(245, 165, 17);
+    background-blend-mode: screen;
     opacity: 0.7;
-    height: 640px;
+    height: 320px;
     width: 360px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    padding-left:5px;
+    padding-right:5px;
 }
 
 #navbar{
@@ -103,8 +106,3 @@ li{
     font-family: "She Smiles";
 }
 
-#about{
-
-    padding-left:5px;
-    padding-right:5px;
-}
