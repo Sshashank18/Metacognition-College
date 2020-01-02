@@ -1,11 +1,61 @@
 #navbar{
     background-color: black;
     color:white;
-    height:35px;
+    height:100vh;
+    padding-top:80px;
+    padding-right:35px;
 }
 
-span{
-    margin:30px 15px 0px 10px;
-    font-family: "Varela Round";
-    
+.button__nav{
+    position: fixed;
+    top: 34px;
+    left: 32px;
+    width: 28px;
+    height: 28px;
+    outline: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    z-index: 9990;
+}
+
+.button__nav line{
+   stroke:rgb(12, 223, 216);
+}
+
+#cross{
+    position: relative;
+    left:15px;
+}
+
+.rounded-corner {
+    display: block;
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    background-color: rgba(29, 24, 24, 0.8);
+    border-bottom-right-radius: 110px;
+    z-index: 0;
+}
+
+.button__nav:active{
+    outline: 0;
+    border:0;
+}
+
+.button__nav:hover{
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    margin:0px 15px 0px 10px;
+    font-family: "Alvaro Condensed";
+    font-size: 50px;
+    text-align: center;
 }

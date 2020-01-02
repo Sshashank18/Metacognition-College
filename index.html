@@ -5,17 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Metacognition</title>
-
-    <!-- LINK BOOTSTRAP -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+    
+     <!-- LINKING BOOTSTRAP  -->
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div id="navbar">
-        <span>Home</span>
-        <span>Events</span>
-
+    <div id="btn-container">
+        <button class="button__nav" id="menu" type="button" style="visibility: inherit; opacity: 1;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28.281" height="17.426" viewBox="0 0 28.281 17.426" class="">
+            <g id="Group_257" data-name="Group 257" transform="translate(-71.5 -59.5)">
+                <line id="Line_20" data-name="Line 20" x2="28.281" transform="translate(71.5 60.5)" fill="none" stroke="#000" stroke-width="2"></line>
+                <line id="Line_21" data-name="Line 21" x2="28.281" transform="translate(71.5 68.213)" fill="none" stroke="#000" stroke-width="2"></line>
+                <line id="Line_22" data-name="Line 22" x2="28.281" transform="translate(71.5 75.926)" fill="none" stroke="#000" stroke-width="2"></line>
+            </g>
+            </svg>
+            <div class="rounded-corner"></div>
+        </button>
     </div>
+    
+    <div id="navbar" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20.674" height="20.674" viewBox="0 0 20.674 20.674" id="cross">
+            <g id="Group_190" data-name="Group 190" transform="translate(312.825 -88.824) rotate(135)">
+                <g id="Group_169" data-name="Group 169" transform="translate(283.82 131.343)">
+                <rect id="Rectangle_142" data-name="Rectangle 142" width="0.376" height="24.861" transform="translate(0)" fill="#f7120f" stroke="#f7120f" stroke-width="2"></rect>
+                </g>
+                <g id="Group_170" data-name="Group 170" transform="translate(271.578 143.586)">
+                <rect id="Rectangle_143" data-name="Rectangle 143" width="24.861" height="0.376" transform="translate(0 0)" fill="#f7120f" stroke="#f7120f" stroke-width="2"></rect>
+                </g>
+            </g>
+        </svg>
+        <ul>
+            <li>Home</li>
+            <li>Events</li>
+            <li>Gallery</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    
+
+
+    <script src="index.js"></script>
 </body>
 </html>
