@@ -1,7 +1,39 @@
+html,body{
+    margin:0px;
+    border:0px;
+}
+
+.box1 {
+
+    background-image: url("Images/background.jpg");
+    height: 640px;
+    width: 360px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.box{
+    background-image:url('Images/back2.jpg');
+    background-color: rgb(241, 205, 137);
+    background-blend-mode: lighten;
+    opacity: 0.7;
+    height: 640px;
+    width: 360px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #navbar{
+    position: fixed;
+    width: 360px;
     background-color: black;
     color:white;
-    height:100vh;
+    height:100%;
+    z-index: 2;
     padding-top:80px;
     padding-right:35px;
 }
@@ -58,4 +90,21 @@ li{
     font-family: "Alvaro Condensed";
     font-size: 50px;
     text-align: center;
+}
+
+.content{
+    color:black;
+    font-weight: 40;
+    font-family: "Raleway";
+}
+
+.head{
+    text-align: center;
+    font-family: "She Smiles";
+}
+
+#about{
+
+    padding-left:5px;
+    padding-right:5px;
 }
