@@ -176,6 +176,9 @@ li{
 #mainMembers{
     background-color:rgb(233, 165, 40);
     background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-bottom:25px;
 }
 
@@ -192,7 +195,6 @@ li{
 
 .memPost{
     text-align: center;
-
 }
 
 
@@ -219,4 +221,21 @@ li{
   content: '<';
   font-size: 45px;
   color: black;
+}
+
+
+.bottom-triangle::after{
+    background-image: url('Images/back2.jpg');
+    background-color: rgb(245, 165, 17);
+    background-blend-mode: screen;
+    opacity: 0.7;
+}
+
+#contact{
+    background-color: #252934;
+    color:white;
+}
+
+.fb{
+    margin-left:100px;
 }
