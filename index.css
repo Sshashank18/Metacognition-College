@@ -194,3 +194,29 @@ li{
     text-align: center;
 
 }
+
+
+#sponsors{
+    height:100%;
+    padding-bottom:50px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 80px;
+  width: 80px;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 45px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 45px;
+  color: black;
+}
