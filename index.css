@@ -5,7 +5,7 @@ html,body{
 
 #navbar{
     position: fixed;
-    width: 360px;
+    width:100%;
     background-color: black;
     color:white;
     height:100%;
@@ -74,7 +74,7 @@ li{
 
     background-image: url("Images/background.jpg");
     height: 640px;
-    width: 360px;
+    width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -88,8 +88,8 @@ li{
     background-color: rgb(245, 165, 17);
     background-blend-mode: screen;
     opacity: 0.7;
-    height: 320px;
-    width: 360px;
+    height: 650px;
+    width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -99,7 +99,26 @@ li{
     padding-right:5px;
 }
 
+#teamEnthiran{
+    height: 700px;
+}
 
+.aboutImg > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height:300px;
+}
+
+
+.teamImg > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height:300px;
+}
 
 .content{
     color:black;
@@ -184,8 +203,10 @@ li{
 
 .member{
     border-radius: 100%;
-    position: relative;
-    left:70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .memName{
@@ -195,6 +216,11 @@ li{
 
 .memPost{
     text-align: center;
+}
+
+.memContainer{
+    margin-bottom:25px;
+
 }
 
 
@@ -239,3 +265,382 @@ li{
 .fb{
     margin-left:100px;
 }
+
+.eventImg{
+    width:320px;height:320px;
+}
+
+
+.carousel-item,
+.carousel-inner,
+.carousel-inner img {
+  height: 100%;
+  width: auto;
+}
+
+@media (min-device-width:320px) and (max-device-width:374px){
+    .container{
+        margin-top:5px;
+        margin-right:5px;
+    }
+    .eventImg{
+        width:280px;
+    }
+
+    .left{
+        padding-left:15px;
+        padding-right:17px;
+        left:8px;
+    }
+
+    .right{
+        padding-left:17px;
+        padding-right:15px;
+        left:257px;
+    }
+
+    .text-block{
+        left:23px;
+    }
+
+    .fb{
+        margin-left:80px;
+    }
+}
+
+@media (min-device-width:375px) and (max-device-width:424px){
+    .container{
+        margin-top:5px;
+        margin-right:5px;
+    }
+
+    .eventImg{
+        width:290px;
+        margin-left:25px;
+    }
+
+    .left{
+        padding-left:15px;
+        padding-right:17px;
+        left:34px;
+    }
+
+    .right{
+        padding-left:17px;
+        padding-right:15px;
+        left:292px;
+    }
+
+    .text-block{
+        left:54px;
+    }
+
+    /* .carousel-inner > .item > img {
+        width:300px;
+      } */
+
+    .fb{
+        margin-left:100px;
+    }
+}
+
+@media (min-device-width:425px) and (max-device-width:767px){
+    .container{
+        margin-top:5px;
+        margin-right:5px;
+    }
+
+    .eventImg{
+        width:290px;
+        margin-left:50px;
+    }
+
+    .left{
+        padding-left:15px;
+        padding-right:17px;
+        left:60px;
+    }
+
+    .right{
+        padding-left:17px;
+        padding-right:15px;
+        left:317px;
+    }
+
+    .text-block{
+        left:80px;
+    }
+
+    /* .carousel-inner > .item > img {
+        width:300px;
+      } */
+
+    .fb{
+        margin-left:130px;
+    }
+}
+
+@media (min-device-width:768px) and (max-device-width:1023px){
+    #navbar{
+        width:360px;
+    }
+
+    .container{
+        margin-top:5px;
+        margin-right:5px;
+        margin-bottom:15px;
+    }
+
+    .cardContainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .eventImg{
+        width:290px;
+        margin-left:50px;
+    }
+
+    .left{
+        padding-left:15px;
+        padding-right:17px;
+        left:59px;
+    }
+
+    .right{
+        padding-left:17px;
+        padding-right:15px;
+        left:317px;
+    }
+
+    .text-block{
+        left:80px;
+    }
+
+    .membox{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+    }
+ 
+    .memContainer{
+        width:190px;
+    }
+
+    .memName{
+        font-size:23px;
+        font-family: 'Raleway';
+    }
+    
+    .aboutImg >img{
+        float: left;
+        margin-right:10px;
+    }
+
+    .content{
+        font-size:20px;
+    }
+
+    #about{
+        height:500px;
+    }
+
+    .teamImg >img{
+        float: right;
+        margin-left:10px;
+    }
+    
+    #teamEnthiran{
+        height:500px;
+    }
+
+    .fb{
+        margin-left:300px;
+    }
+}
+
+@media (min-device-width:1024px) and (max-device-width:1439px){
+    #navbar{
+        width:360px;
+    }
+
+    .head{
+        font-size:60px;
+    }
+
+    .container{
+        margin-top:5px;
+        margin-right:5px;
+        margin-bottom:15px;
+    }
+
+    .cardContainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .eventImg{
+        width:290px;
+        margin-left:50px;
+    }
+
+    .left{
+        padding-left:15px;
+        padding-right:17px;
+        left:59px;
+    }
+
+    .right{
+        padding-left:17px;
+        padding-right:15px;
+        left:317px;
+    }
+
+    .text-block{
+        left:80px;
+    }
+
+    .membox{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+    }
+ 
+    .memContainer{
+        width:330px;
+    }
+
+    .memName{
+        font-size:27px;
+        font-family: 'Raleway';
+    }
+    
+    .aboutImg >img{
+        float: left;
+        margin-right:10px;
+    }
+
+    .content{
+        font-size:25px;
+    }
+
+    #about{
+        height:500px;
+    }
+
+    .teamImg >img{
+        float: right;
+        margin-left:10px;
+    }
+    
+    #teamEnthiran{
+        height:500px;
+    }
+
+    #events{
+        height:600px;
+    }
+
+    .fb{
+        margin-left:600px;
+    }
+}
+
+@media (min-device-width:1440px) and (max-device-width:2559px){
+    #navbar{
+        width:360px;
+    }
+
+    .head{
+
+        font-size:90px;
+    }
+
+    .container{
+        margin-top:5px;
+        margin-right:5px;
+        margin-bottom:15px;
+    }
+
+    .cardContainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .eventImg{
+        width:290px;
+        margin-left:50px;
+    }
+
+    .left{
+        padding-left:15px;
+        padding-right:17px;
+        left:59px;
+    }
+
+    .right{
+        padding-left:17px;
+        padding-right:15px;
+        left:317px;
+    }
+
+    .text-block{
+        left:80px;
+    }
+
+    .membox{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 450px;
+        /* justify-content: space-between; */
+    }
+ 
+    .memContainer{
+        width:350px;
+    }
+
+    .memName{
+        font-size:33px;
+        font-family: 'Raleway';
+    }
+    
+    .aboutImg >img{
+        float: left;
+        margin-right:10px;
+    }
+
+    .content{
+        font-size:30px;
+    }
+
+    #about{
+        height:500px;
+    }
+
+    .teamImg >img{
+        float: right;
+        margin-left:10px;
+    }
+    
+    #teamEnthiran{
+        height:500px;
+    }
+
+    #events{
+        height:700px;
+    }
+
+    .fb{
+        margin-left:630px;
+    }
+}
+
