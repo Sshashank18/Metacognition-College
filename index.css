@@ -3,6 +3,10 @@ html,body{
     border:0px;
 }
 
+a{
+    text-decoration: none !important; 
+}
+
 #navbar{
     position: fixed;
     width:100%;
