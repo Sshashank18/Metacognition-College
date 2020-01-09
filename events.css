@@ -1,7 +1,10 @@
 body,html{
     border: 0;
     margin:0;
-    background-color: rgb(224, 228, 17);
+    background-image: url('Images/back3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
 }
 
 #events{
@@ -54,21 +57,65 @@ body,html{
 
 
 #tech{
-    background-color: rgb(10, 6, 131);
+    /* background-color: rgb(10, 6, 131); */
 }
 
-shadow
+.shadow
 {
-    display:block;
-    position:relative;
+   /* width:50%; */
+   height: 100%;
+   float:left;  
+   padding:50px;
+   background: rgba(0,0,0,0.5);
+   box-sizing: border-box;
+}
+
+.technical2{
+   height: 100%;
+   float:left;  
+   padding:50px;
+   background: rgba(71, 2, 2, 0.5);
+   background-attachment: fixed;
+   box-sizing: border-box;
+
+}
+
+.contentHead{
+    text-align: center;
+    font-family: 'Raleway';
+}
+
+.eventsHead{
+    font-family: 'Roboto Condensed';
+    color:#fff;
+    text-align: center;
+    padding-bottom:50px;
+}
+
+.content{
+    color:#fff;
+    /* background: rgba(0,0,0,0.5); */
+    padding:40px;
+    float: right;
+    width:50%;
 }
 
 .allImg {
-    width: 320px;
-    height: 320px;
+    float: left;
+    margin-left:40px;
+    margin-top:25px;
 }
 
-.shadow:before
+.midDivider{
+    background: #fff;
+    width:1px;
+    height:390px;
+    padding:1px;
+    float: left;
+    margin-left:70px;
+}
+
+/* .shadow:before
 {
     display:block;
     content:'';
@@ -78,4 +125,32 @@ shadow
     -moz-box-shadow:inset 0px 0px 6px 6px rgb(224, 228, 17);
     -webkit-box-shadow:inset 0px 0px 6px 6px rgb(224, 228, 17);
     box-shadow:inset 0px 0px 6px 6px rgb(224, 228, 17);
+} */
+
+ul{
+    margin-top:25px;
+    list-style: none;
+    float: left;
+
+}
+
+li{
+    padding:40px;
+    background: rgba(0,0,0);
+    color:#fff;
+    font-family: 'Roboto Condensed'
+}
+
+li:hover{
+    cursor: pointer;
+}
+
+li:active{
+    background: #fff;
+    color:black;
+}
+
+.rgbtn{
+    margin-top:75px;
+    float:right;
 }
