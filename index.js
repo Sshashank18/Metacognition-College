@@ -11,3 +11,4 @@ cross.click(()=>{
     navbar.attr("hidden",true);
     btncont.removeAttr("hidden");
 })
+

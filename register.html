@@ -14,7 +14,54 @@
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+    <link rel="stylesheet" href="register.css">
 </head>
 <body>
-    <h3>Fill the form below</h3>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScBe0xXExCaY-vLjyN_mNvGqdOrJaqy-7XF5yrCzbTVwmHZbg/viewform?embedded=true" width="640" height="1212" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></html>
+    <h3>REGISTRATION</h3>
+    <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScBe0xXExCaY-vLjyN_mNvGqdOrJaqy-7XF5yrCzbTVwmHZbg/viewform?embedded=true" width="640" height="1212" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+
+    <div class="container">
+        <form class="item" id="registrationForm">
+           <h5>NAME</h5>
+            <input  placeholder="Your Name" id="Name" name="Name" required><br><br>
+            <h5>Email Address</h5>
+            <input  placeholder="Email Address" id="email" name="Email" required><br><br>
+            <h5>Mobile</h5>
+            <input id="Mobile" name="Mobile" maxlength="10" required><br><br>
+
+            <div class="btn-group dropright">
+                <button type="button" class="btn btn-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="branchButton">
+                    BRANCH &#x27A4;
+                </button>
+                <div class="dropdown-menu">
+                    <button type="button" class="dropdown-item">CSE</button>
+                    <button type="button" class="dropdown-item">IT</button>
+                    <button type="button" class="dropdown-item">ECE</button>
+                    <button type="button" class="dropdown-item">EEE</button>
+                    <button type="button" class="dropdown-item">EE</button>
+                    <button type="button" class="dropdown-item">ME</button>
+                    <button type="button" class="dropdown-item">CE</button>
+                    <button type="button" class="dropdown-item">EI</button>
+                </div>
+            </div>
+            <br><br>
+
+
+            <h3>EVENT</h3>
+            <div class="event">
+                ROBOWARS
+            </div>
+
+            <br>
+
+            <h3>Amount</h3>
+            <div class="amount">
+             ₹50   
+            </div>
+
+            <br><br><br>
+            <button type="submit" class="btn btn-success">PAY</button>
+        </form>
+    </div>
+</body>
+</html>
