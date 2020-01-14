@@ -6,7 +6,7 @@ let event1c=$('.btev1c');
 let event2c=$('.btev2c');
 let event3c=$('.btev3c');
 
-let evcontent1t=$('.event1t');
+let evcontent1t=$('.event1tw');
 let evcontent2t=$('.event2t');
 let evcontent3t=$('.event3t');
 
