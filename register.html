@@ -5,63 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Registration</title>
-
-
-     <!-- LINKING BOOTSTRAP  -->
-     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+    
+    
+    <!-- LINKING BOOTSTRAP  -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
     <link rel="stylesheet" href="register.css">
 </head>
 <body>
-    <h3>REGISTRATION</h3>
+    <h3 class="heading">REGISTRATION</h3>
     <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScBe0xXExCaY-vLjyN_mNvGqdOrJaqy-7XF5yrCzbTVwmHZbg/viewform?embedded=true" width="640" height="1212" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
-
+    
     <div class="container">
         <form class="item" id="registrationForm">
-           <h5>NAME</h5>
-            <input  placeholder="Your Name" id="Name" name="Name" required><br><br>
-            <h5>Email Address</h5>
-            <input  placeholder="Email Address" id="email" name="Email" required><br><br>
-            <h5>Mobile</h5>
-            <input id="Mobile" name="Mobile" maxlength="10" required><br><br>
-
-            <div class="btn-group dropright">
-                <button type="button" class="btn btn-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="branchButton">
-                    BRANCH &#x27A4;
-                </button>
-                <div class="dropdown-menu">
-                    <button type="button" class="dropdown-item">CSE</button>
-                    <button type="button" class="dropdown-item">IT</button>
-                    <button type="button" class="dropdown-item">ECE</button>
-                    <button type="button" class="dropdown-item">EEE</button>
-                    <button type="button" class="dropdown-item">EE</button>
-                    <button type="button" class="dropdown-item">ME</button>
-                    <button type="button" class="dropdown-item">CE</button>
-                    <button type="button" class="dropdown-item">EI</button>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="Name"><h5>NAME</h5></label>
+                    <input type="text" class="form-control" id="Name" placeholder="Your Name" required>
                 </div>
             </div>
-            <br><br>
-
-
-            <h3>EVENT</h3>
-            <div class="event">
-                ROBOWARS
-            </div>
-
             <br>
-
-            <h3>Amount</h3>
-            <div class="amount">
-             ₹50   
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="Email"><h5>EMAIL</h5></label>
+                    <input type="text" class="form-control" id="Email" placeholder="Email Address" required>
+                </div>
             </div>
-
-            <br><br><br>
-            <button type="submit" class="btn btn-success">PAY</button>
+            <br>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="Mobile"><h5>MOBILE</h5></label>
+                    <input type="number" class="form-control" id="Mobile" maxlength="10" placeholder="Your Mobile Number" required>
+                </div>
+                
+            </div>
+            <br>
+            <div class="form-row">
+                <div class="col-md-3 mb-3">
+                    <label for="Branch"><h5>BRANCH</h5></label>
+                    <select class="custom-select branch" id="Branch" required>
+                        <option selected data-value="CSE">CSE</option>
+                        <option data-value="IT">IT</option>
+                        <option data-value="ECE">ECE</option>
+                        <option data-value="EEE">EEE</option>
+                        <option data-value="EE">EE</option>
+                        <option data-value="ME">ME</option>
+                        <option data-value="EI">EI</option>
+                        <option data-value="Civil">Civil</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="form-row">
+                <div class="col-md-3 mb-3">
+                    <label for="Year"><h5>YEAR</h5></label>
+                    <select class="custom-select year" id="Year" required>
+                        <option selected data-value="1">1st</option>
+                        <option data-value="2">2nd</option>
+                        <option data-value="3">3rd</option>
+                        <option data-value="4">4th</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="form-row">
+                <div class="col-md-3 mb-3">
+                    <label for="validationServer06"><h5>EVENTS</h5></label>
+                    <select class="custom-select events" id="validationServer06" required>
+                        <option selected data-value="Event1" data-amount="50">Event 1</option>
+                        <option data-value="Event2" data-amount="30">Event 2</option>
+                        <option data-value="Event3" data-amount="50">Event 3</option>
+                        <option data-value="Event4" data-amount="50">Event 4</option>
+                        <option data-value="Event5" data-amount="50">Event 5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="amount"><h5>AMOUNT</h5></label>
+                    <div class="amount" id="price">
+                        ₹50
+                    </div>
+                </div>
+            </div>
+            <br>
+            <button class="btn btn-primary submit" type="submit">PAY</button>
         </form>
     </div>
+    <script src="register.js"></script>
 </body>
 </html>

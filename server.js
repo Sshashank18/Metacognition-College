@@ -6,6 +6,21 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.use(express.static(__dirname+"/"));
+
+
+const {database,Customers}=require('./database');
+
+app.get('/details',(req,res)=>{
+	return Customers.findOne({
+		where:{
+			Name:req.body.Name
+		},
+		attributes:['Name','Email','Mobile','Amount']
+	})
+	.then(()=>res.redirect())
+})
+
 app.get('/paytm', (req, res) => {
     var paytmParams = {
 		"MID" : "cuZBeb01092536643568",
@@ -46,19 +61,29 @@ app.get('/paytm', (req, res) => {
     });
 });
 
-app.get('/success', (req, res) => {
-    res.send(`
-        <h1>Shashank Chutiya</h1>
-    `);
+
+app.post('/register',(req,res)=>{
+    Customers.create({
+		Name:req.body.Name,
+		Email:req.body.Email,
+		Mobile:req.body.Mobile,
+		Branch:req.body.Branch,
+		Year:req.body.Year,
+		Event:req.body.Event,
+		Amount:req.body.Amount
+	})
+	.then(res.redirect('/'));
 });
+
 
 app.post('/success', (req, res) => {
     // console.log(req.body);
-    var paytmChecksum = "";
-    res.send(`
-        <h1>Shashank Chutiya</h1>
-    `);
-    
+	var paytmChecksum = "";
+	res.writeHead(200,{location:"http://127.0.0.1:3000/"});
 });
 
-app.listen(3000, () => console.log('Server Running'));
+database.sync()
+    .then(()=>{
+        console.log("SQL database synced");
+        app.listen(3000,()=>console.log("Server Up and Running on http://127.0.0.1:3000"));
+    });

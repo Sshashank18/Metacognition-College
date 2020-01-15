@@ -6,7 +6,7 @@ let event1c=$('.btev1c');
 let event2c=$('.btev2c');
 let event3c=$('.btev3c');
 
-let evcontent1t=$('.event1tw');
+let evcontent1t=$('.event1t');
 let evcontent2t=$('.event2t');
 let evcontent3t=$('.event3t');
 
@@ -61,4 +61,11 @@ var $li = $('.choice li').click(function() {
     $li.removeClass('selected');
     $(this).addClass('selected');
 
+});
+
+
+let rgbtn=$('.rgbtn');
+
+rgbtn.click((event)=>{
+    window.location="http://127.0.0.1:3000/register.html";
 });

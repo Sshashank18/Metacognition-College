@@ -1,6 +1,51 @@
 body{
     margin:0;
     padding:0;
-    
     background-color: coral;
+}
+
+.container{
+    background-color: #fff;
+    width:85%;
+    padding-top:30px;
+    /* border:1px solid black; */
+    /* box-shadow: 5px 5px 5px 5px black; */
+    height:900px;
+    margin-bottom:25px;
+}
+
+.heading{
+    margin-top:15px;
+    margin-bottom:15px;
+    font-family:'She Smiles';
+    text-align: center;
+}
+
+h5{
+    font-family: 'Roboto Condensed';
+}
+
+.amount{
+    font-weight:800;
+    font-size:20px;
+}
+
+@media  (min-device-width:1024px) and (max-device-width:1439px){
+    .heading{
+        font-size:40px;
+    }
+
+    .container{
+        padding-left:50px;
+        width:550px;
+        height:920px;
+    }
+
+    .form-control{
+        width:350px;
+    }
+
+    .custom-control{
+        width:300px;
+    }
 }
