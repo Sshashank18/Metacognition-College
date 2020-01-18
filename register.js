@@ -28,7 +28,9 @@ $("select.events").change(function(){
     amount.text('₹'+eventAmount);
 });
 
-submit.click(()=>{
+submit.click((event)=>{
+
+    event.preventDefault();
 
     $.ajax({
         url: "/register",
@@ -42,8 +44,14 @@ submit.click(()=>{
             Event:eventName,
             Amount:eventAmount
         },
-        success: () => console.log("done")
-        // window.location="http:127.0.0.1:3000/paytm"
+        success: res => {
+            console.log(res);
+            if (res.message === "Send to register") {
+                window.location=`/paytm?name=${Name.val()}&email=${Email.val()}&mobile=${Mobile.val()}&branch=${branch}&year=${year}&event=${eventName}&amount=${eventAmount}`;
+            } else {
+                alert(res.message);
+            }
+        }
     });
 });
 

@@ -1,6 +1,7 @@
 const checksum_lib = require('./checksum/checksum');
 
 const express = require('express');
+const shortid = require('shortid');
 
 const app = express();
 app.use(express.json());
@@ -22,17 +23,21 @@ app.get('/details',(req,res)=>{
 })
 
 app.get('/paytm', (req, res) => {
+
+	const orderId = shortid.generate();
+	const customerId = shortid.generate();
+
     var paytmParams = {
 		"MID" : "cuZBeb01092536643568",
 		"WEBSITE" : "WEBSTAGING",
 		"INDUSTRY_TYPE_ID" : "Retail",
 		"CHANNEL_ID" : "WEB",
-		"ORDER_ID" : "7",
-		"CUST_ID" : "2",
-		"MOBILE_NO" : "+919315360831",
-		"EMAIL" : "yo@gmail.com",
-		"TXN_AMOUNT" : "1",
-		"CALLBACK_URL" : "http://127.0.0.1:3000/success",
+		"ORDER_ID" : orderId,
+		"CUST_ID" : customerId,
+		"MOBILE_NO" : req.query.mobile,
+		"EMAIL" : req.query.email,
+		"TXN_AMOUNT" : req.query.amount,
+		"CALLBACK_URL" : `http://127.0.0.1:3000/success?name=${req.query.name}&email=${req.query.email}&mobile=${req.query.mobile}&branch=${req.query.branch}&year=${req.query.year}&event=${req.query.event}&amount=${req.query.amount}`,
 	};
  
 	checksum_lib.genchecksum(paytmParams, "u#R7ezMHf4rNiJ3J", function(err, checksum){
@@ -63,24 +68,46 @@ app.get('/paytm', (req, res) => {
 
 
 app.post('/register',(req,res)=>{
-    Customers.create({
-		Name:req.body.Name,
-		Email:req.body.Email,
-		Mobile:req.body.Mobile,
-		Branch:req.body.Branch,
-		Year:req.body.Year,
-		Event:req.body.Event,
-		Amount:req.body.Amount
+	Customers.findOne({
+		where: {
+			Email: req.body.Email,
+			Mobile: req.body.Mobile,
+			Event: req.body.Event
+		}
 	})
-	.then(res.redirect('/'));
+		.then(customer => {
+			if (!customer) {
+				res.status(200).json({
+					message: "Send to register"
+				});
+			} else {
+				res.status(200).json({
+					message: "You're already registered"
+				});
+			}
+		});
 });
-
 
 app.post('/success', (req, res) => {
-    // console.log(req.body);
-	var paytmChecksum = "";
-	res.writeHead(200,{location:"http://127.0.0.1:3000/"});
+	
+	Customers.create({
+		OrderId: req.body.ORDERID,
+		Name: req.query.name,
+		Email: req.query.email,
+		Mobile: req.query.mobile,
+		Branch: req.query.branch,
+		Year: req.query.year,
+		Event: req.query.event,
+		Amount: req.query.amount
+	})
+		.then(() => {
+			res.redirect('/success');
+		});
+
+
 });
+app.use('/success', express.static(__dirname + '/success.html'));
+
 
 database.sync()
     .then(()=>{

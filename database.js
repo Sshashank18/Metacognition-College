@@ -8,6 +8,10 @@ const database=new Sequelize("Meta-Registration","admin","shashank",{
 });
 
 const Customers=database.define("customers",{
+    OrderId: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
     Name:{
         type:Sequelize.STRING,
         allowNull:false
