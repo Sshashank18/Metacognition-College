@@ -3,6 +3,9 @@ const checksum_lib = require('./checksum/checksum');
 const express = require('express');
 const shortid = require('shortid');
 
+
+const { PORT, DOMAIN } = require('./environments');
+
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -37,7 +40,7 @@ app.get('/paytm', (req, res) => {
 		"MOBILE_NO" : req.query.mobile,
 		"EMAIL" : req.query.email,
 		"TXN_AMOUNT" : req.query.amount,
-		"CALLBACK_URL" : `https://metacognition.herokuapp.com/success?name=${req.query.name}&email=${req.query.email}&mobile=${req.query.mobile}&branch=${req.query.branch}&year=${req.query.year}&event=${req.query.event}&amount=${req.query.amount}`,
+		"CALLBACK_URL" : `${DOMAIN}success?name=${req.query.name}&email=${req.query.email}&mobile=${req.query.mobile}&branch=${req.query.branch}&year=${req.query.year}&event=${req.query.event}&amount=${req.query.amount}`,
 	};
  
 	checksum_lib.genchecksum(paytmParams, "u#R7ezMHf4rNiJ3J", function(err, checksum){
@@ -101,14 +104,14 @@ app.post('/success', (req, res) => {
 		Amount: req.query.amount
 	})
 		.then(() => {
-			res.redirect('/success');
+
+			res.redirect(DOMAIN + 'success');
 		});
 
 
 });
 app.use('/success', express.static(__dirname + '/success.html'));
 
-const { PORT, DOMAIN } = require('./environments');
 
 database.sync()
     .then(()=>{
