@@ -108,9 +108,10 @@ app.post('/success', (req, res) => {
 });
 app.use('/success', express.static(__dirname + '/success.html'));
 
+const { PORT, DOMAIN } = require('./environments');
 
 database.sync()
     .then(()=>{
         console.log("SQL database synced");
-        app.listen(3000,()=>console.log("Server Up and Running on http://127.0.0.1:3000"));
+        app.listen(process.env.PORT || PORT,()=>console.log(`Server Up and Running on ${DOMAIN}:${process.env.PORT || PORT}`));
     });
