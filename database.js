@@ -1,22 +1,22 @@
 const Sequelize=require("sequelize");
 
+// const {DATABASE_HOST, DATABASE, DATABASE_USER, DATABASE_PORT, DATABASE_PASSWORD} = require('./environments');
+const { DATABASE_URL } = require('./environments');
 
-let database=new Sequelize("Meta-Registration","admin","shashank",{
-    host:"localhost",
-    dialect:"sqlite",
-    storage:'registration.db',
-    logging:false
-});
- 
-if (process.env.HEROKU_POSTGRESQL_BRONZE_URL) {
-    sequelize = new Sequelize(process.env.HEROKU_POSTGRESQL_BRONZE_URL, {
-        dialect:  'postgres',
-        protocol: 'postgres',
-        port:     match[4],
-        host:     match[3],
-        logging:  false //false
-    })
+let database = null;
+
+if (process.env.PORT) {
+    database = new Sequelize(DATABASE_URL);
+} else {
+    database=new Sequelize("Meta-Registration","admin","shashank",{
+        host:"localhost",
+        dialect:"sqlite",
+        storage:'registration.db',
+        logging:false
+    });
 }
+
+
 
 const Customers=database.define("customers",{
     OrderId: {
