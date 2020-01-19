@@ -10,7 +10,8 @@ if (process.env.PORT) {
     database = new Sequelize(DATABASE_NAME, DATABASE_USER, DATABASE_PASSWORD, {
         host: DATABASE_HOST,
         port: DATABASE_PORT,
-        logging: false
+        logging: false,
+        dialect: "postgres"
     });
 } else {
     database=new Sequelize("Meta-Registration","admin","shashank",{
