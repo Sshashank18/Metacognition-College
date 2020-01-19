@@ -1,11 +1,22 @@
 const Sequelize=require("sequelize");
 
-const database=new Sequelize("Meta-Registration","admin","shashank",{
+
+let database=new Sequelize("Meta-Registration","admin","shashank",{
     host:"localhost",
     dialect:"sqlite",
     storage:'registration.db',
     logging:false
 });
+ 
+if (process.env.HEROKU_POSTGRESQL_BRONZE_URL) {
+    sequelize = new Sequelize(process.env.HEROKU_POSTGRESQL_BRONZE_URL, {
+        dialect:  'postgres',
+        protocol: 'postgres',
+        port:     match[4],
+        host:     match[3],
+        logging:  false //false
+    })
+}
 
 const Customers=database.define("customers",{
     OrderId: {

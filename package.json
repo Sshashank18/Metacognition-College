@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Sshashank18/Metacognition-College#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "postgres": "^1.0.1",
     "sequelize": "^5.21.3",
     "shortid": "^2.2.15",
     "sqlite": "^3.0.3"
