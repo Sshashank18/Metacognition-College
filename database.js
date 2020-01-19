@@ -1,12 +1,17 @@
 const Sequelize=require("sequelize");
 
-// const {DATABASE_HOST, DATABASE, DATABASE_USER, DATABASE_PORT, DATABASE_PASSWORD} = require('./environments');
-const { DATABASE_URL } = require('./environments');
+const {DATABASE_HOST, DATABASE_NAME, DATABASE_USER, DATABASE_PORT, DATABASE_PASSWORD} = require('./environments');
+// const { DATABASE_URL } = require('./environments');
 
 let database = null;
 
 if (process.env.PORT) {
-    database = new Sequelize(DATABASE_URL);
+    // database = new Sequelize(DATABASE_URL);
+    database = new Sequelize(DATABASE_NAME, DATABASE_USER, DATABASE_PASSWORD, {
+        host: DATABASE_HOST,
+        port: DATABASE_PORT,
+        logging: false
+    });
 } else {
     database=new Sequelize("Meta-Registration","admin","shashank",{
         host:"localhost",
