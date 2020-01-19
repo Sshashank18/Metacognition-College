@@ -37,7 +37,7 @@ app.get('/paytm', (req, res) => {
 		"MOBILE_NO" : req.query.mobile,
 		"EMAIL" : req.query.email,
 		"TXN_AMOUNT" : req.query.amount,
-		"CALLBACK_URL" : `http://127.0.0.1:3000/success?name=${req.query.name}&email=${req.query.email}&mobile=${req.query.mobile}&branch=${req.query.branch}&year=${req.query.year}&event=${req.query.event}&amount=${req.query.amount}`,
+		"CALLBACK_URL" : `https://metacognition.herokuapp.com/success?name=${req.query.name}&email=${req.query.email}&mobile=${req.query.mobile}&branch=${req.query.branch}&year=${req.query.year}&event=${req.query.event}&amount=${req.query.amount}`,
 	};
  
 	checksum_lib.genchecksum(paytmParams, "u#R7ezMHf4rNiJ3J", function(err, checksum){
