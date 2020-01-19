@@ -68,5 +68,5 @@ var $li = $('.choice li').click(function() {
 let rgbtn=$('.rgbtn');
 
 rgbtn.click((event)=>{
-    window.location="http://127.0.0.1:3000/register.html";
+    window.location="https://metacognition.herokuapp.com//register.html";
 });
