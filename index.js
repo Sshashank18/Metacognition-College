@@ -1,6 +1,7 @@
 let navbar=$('#navbar');
 let btncont=$('#btn-container');
 let cross=$('#cross');
+let navHit=$('.navHit');
 
 $('#menu').click(()=>{
     navbar.removeAttr("hidden");
@@ -12,3 +13,7 @@ cross.click(()=>{
     btncont.removeAttr("hidden");
 })
 
+navHit.click(()=>{
+    navbar.attr("hidden",true);
+    btncont.removeAttr("hidden");
+})

@@ -98,7 +98,6 @@ body,html{
 
 .content{
     color:#fff;
-    /* background: rgba(0,0,0,0.5); */
     padding:40px;
     float: right;
     width:50%;
@@ -159,9 +158,31 @@ li.selected{
     float:right;
 }
 
+.choiceSmall{
+    display: none;
+}
+
+.contact{
+    /* background-color: #25293492; */
+    color:white;
+    width:100%;
+    height:50px;
+    padding:50px;
+    /* background: rgba(0,0,0,0.5); */
+    box-sizing: border-box;
+}
+.head{
+    text-align: center;
+    margin-left:100px;
+}
+.fb{
+    margin-left:550px;
+}
+
 @media (min-device-width:320px) and (max-device-width:374px){
 
     .eventImg{
+        /* margin-left:2px; */
         width:130px;
         height:130px;
         margin-bottom:10px;
@@ -169,6 +190,73 @@ li.selected{
 
     .head{
         margin-right:40px;
+    }
+    
+    .choiceSmall{
+        display: inline-block;
+    }
+
+    .choice{
+        display: none;
+    }
+    .choiceSmall{
+        margin-left:20px;
+    }
+
+    .nav span{
+        padding:15px;
+        background: rgba(0,0,0);
+        color:#fff;
+        font-family: 'Roboto Condensed'
+    }
+
+    .nav span:hover{
+        cursor: pointer;
+    }
+    
+    .nav span.selected{
+        background: #fff;
+        color:black;
+    }
+
+    .allImg {
+        float: left;
+        position: absolute;
+        left:-23px;
+        /* top:150px; */
+        width:170px;
+        margin-left:32px;
+    }
+
+    .evImg{
+        width:305px;
+    }
+
+    .content{
+        position: relative;
+        top:300px;
+        float: left;
+    }
+
+    .eventHead{
+        padding-bottom: -50px;
+        margin-bottom:-15px;
+    }
+
+    .shadow{
+        width:auto;
+        padding:0px;
+        height:1000px;
+    }
+
+    .content{
+        color:#fff;
+        padding:40px;
+        width:100%;
+    }
+
+    .midDivider{
+        display: none;
     }
 
     .cardContainer{
@@ -179,7 +267,11 @@ li.selected{
         justify-content: space-around;
     }
 
-    .choice{
-        margin-left:0;
+    .head{
+        text-align: center;
+        margin-left:40px;
+    }
+    .fb{
+        margin-left:30px;
     }
 } 

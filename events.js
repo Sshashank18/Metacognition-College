@@ -64,6 +64,12 @@ var $li = $('.choice li').click(function() {
 
 });
 
+var $li = $('.nav span').click(function() {
+    $li.removeClass('selected');
+    $(this).addClass('selected');
+
+});
+
 
 let rgbtn=$('.rgbtn');
 
