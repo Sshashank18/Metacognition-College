@@ -38,7 +38,7 @@ const Customers=database.define("customers",{
         type:Sequelize.STRING
     },
     Mobile:{
-        type:Sequelize.INTEGER,
+        type:Sequelize.STRING,
         allowNull:false
     },
     Branch:{
