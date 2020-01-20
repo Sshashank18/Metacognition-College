@@ -67,7 +67,7 @@ ul{
 
 li{
     margin:0px 15px 0px 10px;
-    font-family: "Alvaro Condensed";
+    font-family: "Alvaro Condensed" !important;
     font-size: 50px;
     text-align: center;
 }
@@ -127,14 +127,14 @@ li{
 .content{
     color:black;
     font-weight: 40;
-    font-family: "Raleway";
+    font-family: "Raleway" !important;
 }
 
 
 
 .head{
     text-align: center;
-    font-family: "She Smiles";
+    font-family: "She Smiles" !important;
 }
 
 
@@ -215,7 +215,7 @@ li{
 
 .memName{
     text-align: center;
-    font-family: "Anton";
+    font-family: "Anton" !important;
 }
 
 .memPost{
@@ -437,7 +437,7 @@ li{
 
     .memName{
         font-size:23px;
-        font-family: 'Raleway';
+        font-family: 'Raleway' !important;
     }
     
     .aboutImg >img{
@@ -523,7 +523,7 @@ li{
 
     .memName{
         font-size:27px;
-        font-family: 'Raleway';
+        font-family: 'Raleway' !important;
     }
     
     .aboutImg >img{
@@ -615,7 +615,7 @@ li{
 
     .memName{
         font-size:33px;
-        font-family: 'Raleway';
+        font-family: 'Raleway' !important;
     }
     
     .aboutImg >img{
