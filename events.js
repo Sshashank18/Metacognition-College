@@ -58,14 +58,17 @@ event1c.click(()=>{
     evcontent3c.attr('hidden','');
 })
 
-var $li = $('.choice li').click(function() {
+
+
+// BUTTON TOGGLE 
+
+var $li = $('.list li').click(function() {
     $li.removeClass('selected');
     $(this).addClass('selected');
-
 });
 
-var $li = $('.nav span').click(function() {
-    $li.removeClass('selected');
+var $span = $('.nav span').click(function() {
+    $span.removeClass('selected');
     $(this).addClass('selected');
 
 });

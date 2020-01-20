@@ -115,7 +115,7 @@ body,html{
     height:390px;
     padding:1px;
     float: left;
-    margin-left:70px;
+    margin-left:60px;
 }
 
 /* .shadow:before
@@ -148,7 +148,7 @@ li:hover{
     cursor: pointer;
 }
 
-li.selected{
+.list li.selected{
     background: #fff;
     color:black;
 }
