@@ -200,7 +200,7 @@ li.selected{
         display: none;
     }
     .choiceSmall{
-        margin-left:40px;
+        margin-left:35px;
     }
 
     .nav span{
@@ -230,7 +230,7 @@ li.selected{
 
     .evImg{
         width:305px;
-        margin-left:15px;
+        margin-left:25px;
     }
 
     .content{
