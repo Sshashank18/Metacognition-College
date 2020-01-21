@@ -49,6 +49,10 @@ const Customers=database.define("customers",{
         type:Sequelize.INTEGER,
         allowNull:false
     },
+    CollegeName:{
+        type:Sequelize.STRING,
+        allowNull:false
+    },
     Event:{
         type:Sequelize.STRING,
         allowNull:false

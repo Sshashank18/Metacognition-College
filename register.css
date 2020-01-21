@@ -10,7 +10,7 @@ body{
     padding-top:30px;
     /* border:1px solid black; */
     /* box-shadow: 5px 5px 5px 5px black; */
-    height:900px;
+    height:1100px;
     margin-bottom:25px;
 }
 
@@ -38,7 +38,7 @@ h5{
     .container{
         padding-left:50px;
         width:550px;
-        height:920px;
+        /* height:1100px; */
     }
 
     .form-control{

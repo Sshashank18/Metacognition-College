@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Events</title>
-
+    
     <!-- LINKING BOOTSTRAP  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="events.css">
+    
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <link rel="stylesheet" href="events.css">
-
+    
 </head>
 <body>
-
-    <a href="/"><button class="btn btn-primary home">Home</button></a>
-
+    
+    <a href="/"><button class="btn btn-light home">Home</button></a>
+    
     <!-- Events -->
     <div id="events">
         <br>
@@ -32,8 +36,8 @@
                 <div class="container">
                     <!-- <div class="left"></div> -->
                     <!-- <div class="right"></div> -->
-                    <img src="Images/cultural.webp" class="eventImg" alt="cultural">
-                    <div class="text-block cultural">
+                    <img src="Images/coding.png" class="eventImg" alt="Coding">
+                    <div class="text-block coding">
                         <!-- <h3 class="text-content">CULTURAL</h3> -->
                     </div>
                 </div>
@@ -42,8 +46,8 @@
                 <div class="container">
                     <!-- <div class="left"></div> -->
                     <!-- <div class="right"></div> -->
-                    <img src="Images/technical.png" class="eventImg" alt="technical">
-                    <div class="text-block technical">
+                    <img src="Images/creative.png" class="eventImg" alt="Creative">
+                    <div class="text-block creative">
                         <!-- <h3 class="text-content">TECHNICAL</h3> -->
                     </div>
                 </div>
@@ -52,8 +56,8 @@
                 <div class="container">
                     <!-- <div class="left"></div> -->
                     <!-- <div class="right"></div> -->
-                    <img src="Images/cultural.webp" class="eventImg" alt="cultural">
-                    <div class="text-block cultural">
+                    <img src="Images/gaming.png" class="eventImg" alt="Gaming">
+                    <div class="text-block gaming">
                         <!-- <h3 class="text-content ">CULTURAL</h3> -->
                     </div>
                 </div>
@@ -62,210 +66,327 @@
                 <div class="container">
                     <!-- <div class="left"></div> -->
                     <!-- <div class="right"></div> -->
-                    <img src="Images/technical.png" class="eventImg" alt="technical">
-                    <div class="text-block technical">
+                    <img src="Images/funEvents.png" class="eventImg" alt="Fun Events">
+                    <div class="text-block fun_events">
                         <!-- <h3 class="text-content">TECHNICAL</h3> -->
                     </div>
                 </div>
             </a>
             <a href="#cultural">
                 <div class="container">
-                    <!-- <div class="left"></div> -->
-                    <!-- <div class="right"></div> -->
-                    <img src="Images/cultural.webp" class="eventImg" alt="cultural">
-                    <div class="text-block cultural">
+                    
+                    <img src="Images/electronics.png" class="eventImg" alt="Electronics">
+                    <div class="text-block electronics">
                         <!-- <h3 class="text-content">CULTURAL</h3> -->
                     </div>
                 </div>
             </a>
-            <a href="#tech">
-                <div class="container">
-                    <!-- <div class="left"></div> -->
-                    <!-- <div class="right"></div> -->
-                    <img src="Images/technical.png" class="eventImg" alt="technical">
-                    <div class="text-block technical">
-                        <!-- <h3 class="text-content">TECHNICAL</h3> -->
-                    </div>
-                </div>
-            </a>
         </div>
     </div>
-
+    
     <hr>
+    
+    <!-- Coding -->
+    <div class="shadow technical2" id="coding">
+        <h2 class="eventsHead">Coding</h2>
+        <div class="choiceSmall">
+            <div class="nav">
+                <span class="btev1t selected"><h4>CodeMathics</h4></span>
+                <span class="btev2t"><h4 >Codewar</h4></span>
+                <span class="btev3t"><h4 >Bug Hunt</h4></span>
+                <span class="btev4t"><h4 >DaVinci Code</h4></span>
+                
+            </div>
+        </div>
+        <div class="choice">
+            <ul class="list">
+                <li class="btev1t selected"><h4 >CodeMathics</h4></li>
+                <li class="btev2t"><h4 >Codewar</h4></li>
+                <li class="btev3t"><h4 >Bug Hunt</h4></li>
+                <li class="btev4t"><h4 >DaVinci Code</h4></li>
+                
+            </ul>
+        </div>
+        <div class="midDivider">
+            
+        </div>
+        <div class="allImg">
+            <img class="evImg" src="Images/technical.png" width="320px" height="300px" >
+        </div>
+        <div class="content event1t">
+            <h3 class="contentHead">CodeMathics</h3>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+            printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+            <div class="price">₹50</div>
+            
+            <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
+        </div>
+        
+        <div class="content event2t" hidden>
+            <h3 class="contentHead">Codewar</h3>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+            printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+            <div class="price">₹50</div>
+            
+            <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
+        </div>
+        
+        <div class="content event3t" hidden>
+            <h3 class="contentHead">Bug Hunt</h3>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+            printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+            <div class="price">₹50</div>
+            <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
+        </div>
+        
+        <div class="content event4t" hidden>
+            <h3 class="contentHead">DaVinci Code</h3>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+            printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+            <div class="price">₹50</div>
+            <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
+        </div>
+        
+    </div>
+    
+    
+    <!-- Creative -->
+    <div class="shadow" id="creative">
+        <h2 class="eventsHead">Creative</h2>
+        <div class="choiceSmall">
+            <div class="nav">
+                <span class="btev1c selected"><h4  >Photoshop</h4></span>
+                <span class="btev2c"><h4 >Pic-a-mania</h4></span>                    
+            </div>
+        </div>
+        <div class="choice">
+            <ul class="list creat">
+                <li class="btev1c selected"><h4  >Photoshop</h4></li>
+                <li class="btev2c"><h4 >Pic-a-mania</h4></li>
+            </ul>
+        </div>
+        <div class="midDivider">
+            
+        </div>
+        <div class="allImg">
+            <img  class="evImg"src="Images/cultural.webp" width="320px" height="300px" >
+        </div>
+        <div class="content event1c">
+            <h3 class="contentHead">Photoshop</h3>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+            printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+            <div class="price">₹50</div>
+            
+            <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
+        </div>
+        
+        <div class="content event2c" hidden>
+            <h3 class="contentHead">Pic-a-mania</h3>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+            printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+            <div class="price">₹50</div>
+            
+            <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
+        </div>
+        
+    </div>
+    
+    <!-- Gaming -->
+    <div class="shadow technical2" id="gaming">
+        <h2 class="eventsHead">Gaming</h2>
+        <div class="choiceSmall">
+            <div class="nav">
+                <span class="btev1g selected"><h4  >FIFA</h4></span>
+                <span class="btev2g"><h4 >PUBG</h4></span>                    
+            </div>
+        </div>
+        <div class="choice">
+            <ul class="list">
+                <li class="btev1g selected"><h4  >FIFA</h4></li>
+                <li class="btev2g"><h4 >PUBG</h4></li>
+            </ul>
+        </div>
+        <div class="midDivider">
+            
+        </div>
+        <div class="allImg">
+            <img  class="evImg"src="Images/cultural.webp" width="320px" height="300px" >
+        </div>
+        <div class="content event1g">
+            <h3 class="contentHead">FIFA</h3>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+            printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+            <div class="price">₹50</div>
+            
+            <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
+        </div>
+        
+        <div class="content event2g" hidden>
+            <h3 class="contentHead">PUBG</h3>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+            printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+            <div class="price">₹50</div>
+            
+            <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
+        </div>
+        
+    </div>
+    
+    <!-- Fun Events -->
+    <div class="shadow cultural2" id="funEvents">
+        <h2 class="eventsHead">Fun Events</h2>
+        <div class="choiceSmall">
+            <div class="nav">
+                <span class="btev1f selected"><h4  >Treasure Hunt</h4></span>
+                <span class="btev2f"><h4 >Escape Room</h4></span>
+                <span class="btev3f"><h4 >F.R.I.E.N.D.S quiz</h4></span>
+                <span class="btev4f"><h4 >E-Surfing</h4></span>                
+            </div>
+        </div>
+        <div class="choice">
+            <ul class="list">
+                <li class="btev1f selected"><h4>Treasure Hunt</h4></li>
+                <li class="btev2f"><h4 >Escape Room</h4></li>
+                <li class="btev3f"><h4 >F.R.I.E.N.D.S quiz</h4></li>
+                <li class="btev4f"><h4 >E-Surfing</h4></li>
+            </ul>
+        </div>
+        <div class="midDivider">
+            
+        </div>
+        <div class="allImg">
+            <img  class="evImg"src="Images/cultural.webp" width="320px" height="300px" >
+        </div>
+        <div class="content event1f">
+            <h3 class="contentHead">Treasure Hunt</h3>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+            printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+            <div class="price">₹50</div>
+            
+            <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
+        </div>
+        
+        <div class="content event2f" hidden>
+            <h3 class="contentHead">Escape Room</h3>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+            printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+            <div class="price">₹50</div>
+            
+            <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
+        </div>
+        
+        <div class="content event3f" hidden>
+            <h3 class="contentHead">F.R.I.E.N.D.S quiz</h3>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+            printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+            <div class="price">₹50</div>
+            
+            <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
+        </div>
 
-    <div class="shadow technical2" id="tech">
-        <h2 class="eventsHead">TECHNICAL</h2>
-            <div class="choiceSmall">
-               <div class="nav">
-                    <span class="btev1t selected"><h4  >Event1</h4></span>
-                    <span class="btev2t"><h4 >Event2</h4></span>
-                    <span class="btev3t"><h4 >Event3</h4></span>
-                    <span class="btev3c"><h4 >Event34/h4></span>
+        <div class="content event4f" hidden>
+                <h3 class="contentHead">E-Surfing</h3>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+                printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                <div class="price">₹50</div>
+                
+                <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
+            </div>
 
-               </div>
+    </div>
+    
+    <!-- Electronics -->
+    <div class="shadow technical2" id="electro">
+        <h2 class="eventsHead">Electronics</h2>
+        <div class="choiceSmall">
+            <div class="nav">
+                <span class="btev1e selected"><h4  >EC quiz</h4></span>
+                <span class="btev2e"><h4 >Circuit Debugging</h4></span>
+                <span class="btev3e"><h4 >LFR</h4></span>
+                <span class="btev4e"><h4 >Roborace</h4></span>
+                    
+                </div>
             </div>
             <div class="choice">
                 <ul class="list">
-                    <li class="btev1t selected"><h4 >Event1</h4></li>
-                    <li class="btev2t"><h4 >Event2</h4></li>
-                    <li class="btev3t"><h4 >Event3</h4></li>
+                    <li class="btev1e selected"><h4 >EC quiz</h4></li>
+                    <li class="btev2e"><h4 >Circuit Debugging</h4></li>
+                    <li class="btev3e"><h4 >LFR</h4></li>
+                    <li class="btev4e"><h4 >Roborace</h4></li>
                 </ul>
             </div>
             <div class="midDivider">
-
+                
             </div>
             <div class="allImg">
                 <img class="evImg" src="Images/technical.png" width="320px" height="300px" >
             </div>
-            <div class="content event1t">
-                <h3 class="contentHead">Event 1</h3>
+            <div class="content event1e">
+                <h3 class="contentHead">EC Quiz</h3>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
                 printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
                 <div class="price">₹50</div>
-
-                <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
-            </div>
-
-            <div class="content event2t" hidden>
-                <h3 class="contentHead">Event 2</h3>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
-                printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                <div class="price">₹50</div>
-
-                <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
-            </div>
-        
-            <div class="content event3t" hidden>
-                <h3 class="contentHead">Event 3</h3>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
-                printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                <div class="price">₹50</div>
-                <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
-            </div>
-    </div>
-
-    <div class="shadow cultural2" id="cultural">
-            <h2 class="eventsHead">CULTURAL</h2>
-            <div class="choiceSmall">
-                    <div class="nav">
-                         <span class="btev1c selected"><h4  >Event1</h4></span>
-                         <span class="btev2c"><h4 >Event2</h4></span>
-                         <span class="btev3c"><h4 >Event3</h4></span>
-                         
-                    </div>
-                 </div>
-                <div class="choice">
-                    <ul class="list">
-                        <li class="btev1c selected"><h4  >Event1</h4></li>
-                        <li class="btev2c"><h4 >Event2</h4></li>
-                        <li class="btev3c"><h4 >Event3</h4></li>
-                    </ul>
-                </div>
-                <div class="midDivider">
-    
-                </div>
-                <div class="allImg">
-                    <img  class="evImg"src="Images/cultural.webp" width="320px" height="300px" >
-                </div>
-                <div class="content event1c">
-                    <h3 class="contentHead">Event 1</h3>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
-                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                    <div class="price">₹50</div>
-
-                    <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
-                </div>
-    
-                <div class="content event2c" hidden>
-                    <h3 class="contentHead">Event 2</h3>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
-                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                    <div class="price">₹50</div>
-
-                    <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
-                </div>
-            
-                <div class="content event3c" hidden>
-                    <h3 class="contentHead">Event 3</h3>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
-                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                    <div class="price">₹50</div>
-
-                    <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
-                </div>
-        </div>
-        <div class="shadow technical2">
-                <h2 class="eventsHead">TECHNICAL</h2>
-                <div class="choiceSmall">
-                        <div class="nav">
-                             <span class="btev1t selected"><h4  >Event1</h4></span>
-                             <span class="btev2t"><h4 >Event2</h4></span>
-                             <span class="btev3t"><h4 >Event3</h4></span>
-                        </div>
-                     </div>
-                    <div class="choice">
-                        <ul class="list">
-                            <li class="btev1t selected"><h4  >Event1</h4></li>
-                            <li class="btev2t"><h4 >Event2</h4></li>
-                            <li class="btev3t"><h4 >Event3</h4></li>
-                        </ul>
-                    </div>
-                    <div class="midDivider">
-        
-                    </div>
-                    <div class="allImg">
-                        <img  class="evImg" src="Images/technical.png" width="320px" height="300px" >
-                    </div>
-                    <div class="content event1t">
-                        <h3 class="contentHead">Event 1</h3>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
-                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        <div class="price">₹50</div>
-
-                        <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
-                    </div>
-        
-                    <div class="content event2t" hidden>
-                        <h3 class="contentHead">Event 2</h3>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
-                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        <div class="price">₹50</div>
-
-                        <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
-                    </div>
                 
-                    <div class="content event3t" hidden>
-                        <h3 class="contentHead">Event 3</h3>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
-                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        <div class="price">₹50</div>
-
-                        <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
-                    </div>
+                <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
             </div>
-    
-     <!-- CONTACT -->
-     <div class="contact">
-        <!-- <svg class="bottom-triangle" preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0 L50 100 L100 0 Z" fill="#f5f5f5" stroke="#f5f5f5"></path>
-        </svg> -->
-        <br><br>
-        <h1 class="head">CONTACT</h1>
-        <br>
-        <a href="https://www.facebook.com/teamenthiran/"><img class="fb" src="Images/fb.png" width="85px"></a>
-        <a href="https://www.instagram.com/teamenthiran/"><img src="Images/insta.png" width="50px"></a>
-    </div>
+            
+            <div class="content event2e" hidden>
+                <h3 class="contentHead">Circuit Debugging</h3>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+                printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                <div class="price">₹50</div>
+                
+                <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
+            </div>
+            
+            <div class="content event3e" hidden>
+                <h3 class="contentHead">LFR</h3>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+                printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                <div class="price">₹50</div>
+                <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
+            </div>
 
-    <script src="events.js"></script>
+            <div class="content event4e" hidden>
+                <h3 class="contentHead">Roborace</h3>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+                printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                <div class="price">₹50</div>
+                <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
+            </div>
 
-</body>
-</html>
+
+        </div>
+        
+        <!-- CONTACT -->
+        <div class="contact">
+            <!-- <svg class="bottom-triangle" preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0 L50 100 L100 0 Z" fill="#f5f5f5" stroke="#f5f5f5"></path>
+            </svg> -->
+            <br><br>
+            <h1 class="head">CONTACT</h1>
+            <br>
+            <a href="https://www.facebook.com/teamenthiran/"><img class="fb" src="Images/fb.png" width="85px"></a>
+            <a href="https://www.instagram.com/teamenthiran/"><img src="Images/insta.png" width="50px"></a>
+        </div>
+        
+        <script src="events.js"></script>
+        
+    </body>
+    </html>
