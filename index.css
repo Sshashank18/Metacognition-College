@@ -102,9 +102,10 @@ li{
 
 .box{
     background-image:url('Images/back2.jpg');
-    background-color: rgb(245, 165, 17);
-    background-blend-mode: screen;
-    opacity: 0.7;
+    /* background-color: rgb(245, 165, 17); */
+    /* background-blend-mode: screen; */
+    opacity: 0.9;
+    color:wheat;
     height: 650px;
     width: 100%;
     background-attachment: fixed;
@@ -114,6 +115,10 @@ li{
 
     padding-left:5px;
     padding-right:5px;
+}
+
+#about{
+    height:680px;
 }
 
 #teamEnthiran{
@@ -138,8 +143,9 @@ li{
 }
 
 .content{
-    color:black;
-    font-weight: 40;
+    /* color:black; */
+    font-weight: 50;
+    font-size:20px;
     font-family: "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 }
 
@@ -334,77 +340,6 @@ li{
     }
 }
 
-@media (min-device-width:375px) and (max-device-width:424px){
-    .container{
-        margin-top:5px;
-        margin-right:5px;
-    }
-
-    .eventImg{
-        width:290px;
-        margin-left:25px;
-    }
-
-    .left{
-        padding-left:15px;
-        padding-right:17px;
-        left:34px;
-    }
-
-    .right{
-        padding-left:17px;
-        padding-right:15px;
-        left:292px;
-    }
-
-    .text-block{
-        left:54px;
-    }
-
-    /* .carousel-inner > .item > img {
-        width:300px;
-      } */
-
-    .fb{
-        margin-left:100px;
-    }
-}
-
-@media (min-device-width:425px) and (max-device-width:767px){
-    .container{
-        margin-top:5px;
-        margin-right:5px;
-    }
-
-    .eventImg{
-        width:290px;
-        margin-left:50px;
-    }
-
-    .left{
-        padding-left:15px;
-        padding-right:17px;
-        left:60px;
-    }
-
-    .right{
-        padding-left:17px;
-        padding-right:15px;
-        left:317px;
-    }
-
-    .text-block{
-        left:80px;
-    }
-
-    /* .carousel-inner > .item > img {
-        width:300px;
-      } */
-
-    .fb{
-        margin-left:130px;
-    }
-}
 
 @media (min-device-width:768px) and (max-device-width:1023px){
     #navbar{
@@ -553,7 +488,7 @@ li{
     }
 
     .content{
-        font-size:25px;
+        font-size:26px;
     }
 
     #about{
