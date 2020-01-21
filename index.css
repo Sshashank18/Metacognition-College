@@ -86,12 +86,12 @@ li{
 }
 
 
-
 .box1 {
 
-    background-image: url("Images/background.jpg");
+    background-image: url("Images/background.png");
     height: 640px;
     width: 100%;
+    /* background-color:rgb(211, 17, 245); */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -140,7 +140,7 @@ li{
 .content{
     color:black;
     font-weight: 40;
-    font-family: "Raleway" !important;
+    font-family: "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 }
 
 
