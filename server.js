@@ -12,7 +12,6 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static(__dirname+"/"));
 
-
 const {database,Customers}=require('./database');
 
 app.get('/details',(req,res)=>{
