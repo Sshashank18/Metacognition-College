@@ -2,6 +2,7 @@
 html,body{
     margin:0px;
     border:0px;
+    /* background-color: rgb(98, 6, 184); */
 }
 
 
@@ -34,7 +35,7 @@ a{
 }
 
 .button__nav line{
-   stroke:rgb(255, 0, 0);
+   stroke:rgb(248, 248, 248);
 }
 
 #cross{
@@ -49,7 +50,7 @@ a{
     position: absolute;
     top: -40px;
     left: -40px;
-    background-color: rgba(29, 24, 24, 0.9);
+    background-color: rgba(29, 24, 24, 0.6);
     border-bottom-right-radius: 110px;
     z-index: 0;
 }

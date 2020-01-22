@@ -84,14 +84,8 @@ body,html{
 .content{
     color:#fff;
     padding:40px;
-    float: right;
+    /* float: right; */
     width:50%;
-}
-
-.allImg {
-    float: left;
-    margin-left:40px;
-    margin-top:25px;
 }
 
 .midDivider{
@@ -116,6 +110,7 @@ ul{
 
 li{
     padding:30px;
+    border-radius:20%;
     background: rgba(0,0,0);
     color:#fff;
     font-family: 'Roboto Condensed'
@@ -194,20 +189,6 @@ li:hover{
     .nav span.selected{
         background: #fff;
         color:black;
-    }
-
-    .allImg {
-        float: left;
-        position: absolute;
-        left:-23px;
-        /* top:150px; */
-        width:170px;
-        margin-left:32px;
-    }
-
-    .evImg{
-        width:305px;
-        margin-left:25px;
     }
 
     .content{
