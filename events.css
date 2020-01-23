@@ -111,7 +111,7 @@ ul{
 li{
     padding:30px;
     border-radius:20%;
-    background: rgba(0,0,0);
+    /* background: rgba(0,0,0); */
     color:#fff;
     font-family: 'Roboto Condensed'
 }
