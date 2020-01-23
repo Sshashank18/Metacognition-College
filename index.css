@@ -108,7 +108,7 @@ li{
 }
 
 #about{
-    height:680px;
+    height:1250px;
 }
 
 #teamEnthiran{
@@ -158,38 +158,6 @@ li{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-
-#mainMembers{
-    background-color:rgb(233, 165, 40);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom:25px;
-}
-
-.member{
-    border-radius: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-.memName{
-    text-align: center;
-    font-family: 'Anton',sans-serif;
-}
-
-.memPost{
-    text-align: center;
-}
-
-.memContainer{
-    margin-bottom:25px;
-
 }
 
 
@@ -270,22 +238,6 @@ li{
         margin-left:10px;
     }
 
-    /* .left{
-        padding-left:15px;
-        padding-right:17px;
-        left:18px;
-    }
-
-    .right{
-        padding-left:17px;
-        padding-right:15px;
-        left:267px;
-    } */
-
-    .text-block{
-        left:33px;
-    }
-
     .fb{
         margin-left:60px;
     }
@@ -305,87 +257,6 @@ li{
     }
 }
 
-/* @media (min-device-width:768px) and (max-device-width:1023px){
-    #navbar{
-        width:360px;
-    }
-
-    .container{
-        margin-top:5px;
-        margin-right:5px;
-        margin-bottom:15px;
-    }
-
-    .cardContainer{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .eventImg{
-        width:290px;
-        margin-left:50px;
-    }
-
-    /* .left{
-        padding-left:15px;
-        padding-right:17px;
-        left:59px;
-    }
-
-    .right{
-        padding-left:17px;
-        padding-right:15px;
-        left:317px;
-    } */
-
-    /* .text-block{
-        left:80px;
-    }
-
-    .membox{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap; */
-        /* justify-content: space-between; */
-    /* }
- 
-    .memContainer{
-        width:190px;
-    }
-
-    .memName{
-        font-size:23px;
-        font-family: 'Raleway',sans-serif;
-    }
-    
-    .aboutImg >img{
-        float: left;
-        margin-right:10px;
-    }
-
-    .content{
-        font-size:20px;
-    }
-
-    #about{
-        height:500px;
-    }
-
-    .teamImg >img{
-        float: right;
-        margin-left:10px;
-    }
-    
-    #teamEnthiran{
-        height:1200px;
-    }
-
-    .fb{
-        margin-left:300px;
-    }
-} */ 
 
 @media (min-device-width:1024px) and (max-device-width:1439px){
     #navbar{
@@ -455,8 +326,12 @@ li{
         font-size:21px;
     }
 
+    .aboutMeta{
+        font-size:19.5px;
+    }
+
     #about{
-        height:500px;
+        height:600px;
     }
 
     .teamImg >img{
@@ -476,96 +351,3 @@ li{
         margin-left:560px;
     }
 }
-
-/* @media (min-device-width:1440px) and (max-device-width:2559px){
-    #navbar{
-        width:360px;
-    }
-
-    .head{
-
-        font-size:90px;
-    }
-
-    .container{
-        margin-top:5px;
-        margin-right:5px;
-        margin-bottom:15px;
-    }
-
-    .cardContainer{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .eventImg{
-        width:290px;
-        margin-left:50px;
-    }
-
-    .left{
-        padding-left:15px;
-        padding-right:17px;
-        left:59px;
-    }
-
-    .right{
-        padding-left:17px;
-        padding-right:15px;
-        left:317px;
-    }
-
-    .text-block{
-        left:80px;
-    }
-
-    .membox{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        height: 450px;
-        /* justify-content: space-between; */
-    /* }
-
-    .memContainer{
-        width:350px;
-    }
-
-    .memName{
-        font-size:33px;
-        font-family: 'Raleway',sans-serif;
-    }
-    
-    .aboutImg >img{
-        float: left;
-        margin-right:10px;
-    }
-
-    .content{
-        font-size:30px;
-    }
-
-    #about{
-        height:500px;
-    }
-
-    .teamImg >img{
-        float: right;
-        margin-left:10px;
-    }
-    
-    #teamEnthiran{
-        height:500px;
-    }
-
-    #events{
-        height:700px;
-    }
-
-    .fb{
-        margin-left:630px;
-    }
-}
- */ 

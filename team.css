@@ -1,0 +1,86 @@
+body,html{
+    /* background-color:rgb(233, 165, 40); */
+    background-image: url('Images/back2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+
+    color:wheat;
+}
+
+.home{
+    float: left;
+    margin-left:25px;
+    margin-top:25px;
+}
+
+
+#Head{
+    margin-right:100px;
+    text-align: center;
+    font-family: 'Bangers';
+}
+
+.subHead{
+    text-align:center;
+    font-family: 'Russo One';
+}
+
+.name{
+    font-family: 'Roboto Condensed';
+}
+
+.clubs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+
+    height:500px;
+    padding-top:100px;
+    background: rgba(0,0,0,0.5);
+}
+
+.box2{
+    background: rgba(71, 2, 2, 0.5);
+}
+
+.evH{
+    height:690px;
+    padding-top: 40px;
+}
+
+
+
+.member{
+    border-radius:100%;
+    width:250px;
+    height: 250px;
+}
+
+
+.eH{
+    width:230px;
+    height:200px;
+}
+
+.name{
+    margin-left:40px;
+    margin-top:25px;
+    font-size:28px;
+}
+
+.sp{
+    margin-left:25px;
+}
+
+@media  (min-device-width:320px) and (max-device-width:425px){
+    .clubs{
+        height:750px;
+        padding-top:50px;
+    }
+
+    .evH{
+        height:3070px;
+    }
+}
