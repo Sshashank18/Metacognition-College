@@ -157,7 +157,7 @@ li{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 
@@ -208,7 +208,7 @@ li{
 }
 
 .eventImg{
-    width:320px;height:320px;
+    width:250px;height:250px;
 }
 
 
@@ -274,6 +274,7 @@ li{
     }
 
     .cardContainer{
+        padding-top:35px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -281,42 +282,10 @@ li{
     }
 
     .eventImg{
-        width:290px;
-        margin-left:50px;
+        width:210px;
+        /* margin-left:50px; */
     }
 
-    .left{
-        padding-left:15px;
-        padding-right:17px;
-        left:59px;
-    }
-
-    .right{
-        padding-left:17px;
-        padding-right:15px;
-        left:317px;
-    }
-
-    .text-block{
-        left:80px;
-    }
-
-    .membox{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        /* justify-content: space-between; */
-    }
- 
-    .memContainer{
-        width:330px;
-    }
-
-    .memName{
-        font-size:27px;
-        font-family: 'Raleway',sans-serif;
-    }
-    
     .aboutImg >img{
         float: left;
         margin-right:10px;
