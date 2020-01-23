@@ -74,6 +74,10 @@ body,html{
     margin-left:25px;
 }
 
+.spe{
+    margin-left:75px;
+}
+
 @media  (min-device-width:320px) and (max-device-width:425px){
     .clubs{
         height:750px;
