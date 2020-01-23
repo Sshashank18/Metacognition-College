@@ -152,10 +152,12 @@ li{
     /* padding-bottom:15px; */
 }
 
-.container{
-    position: relative;
-    overflow: hidden;
 
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
@@ -237,9 +239,9 @@ li{
     margin-left:10px;
 }
 
-.eventImg{
+/* .eventImg{
     width:320px;height:320px;
-}
+} */
 
 
 .carousel-item,

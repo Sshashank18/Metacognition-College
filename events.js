@@ -182,5 +182,5 @@ var $span = $('.nav span').click(function() {
 let rgbtn=$('.rgbtn');
 
 rgbtn.click((event)=>{
-    window.location="https://metacognition.herokuapp.com/register.html";
+    window.location="https://metacognition-registration.herokuapp.com/";
 });
