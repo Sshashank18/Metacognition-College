@@ -30,9 +30,7 @@ body,html{
 .container{
     position: relative;
     overflow: hidden;
-
 }
-
 
 .eventImg{
     width:190px;height:200px;
@@ -60,55 +58,61 @@ body,html{
 
 .technical2{
    height: 100%;
+   width:100%;
    float:left;  
    padding-bottom:50px;
    padding-left:10px;
    background: rgba(71, 2, 2, 0.5);
-   background-attachment: fixed;
    box-sizing: border-box;
 
 }
 
 .contentHead{
     text-align: center;
-    font-family: 'Raleway';
+    font-family: 'Russo One';
 }
 
 .eventsHead{
-    font-family: 'Roboto Condensed';
+    font-family: 'Bowlby One SC';
     color:#fff;
     text-align: center;
     padding-bottom:50px;
 }
 
+.smallHead{
+    font-family: 'Montserrat';
+}
+
 .content{
     color:#fff;
     padding:40px;
-    /* float: right; */
-    width:50%;
+    height:100%;
 }
 
 .midDivider{
     background: #fff;
     width:1px;
-    height:430px;
+    height:640px;
     padding:1px;
     float: left;
     margin-left:25px;
 }
 
-ul{
+.lfrmid{
+    height:950px;
+}
+
+.list{
     margin-top:25px;
     list-style: none;
     float: left;
-
 }
 
 #creat{
     margin-top:50px;
 }
 
-li{
+.bt{
     padding:30px;
     border-radius:20%;
     /* background: rgba(0,0,0); */
@@ -116,7 +120,7 @@ li{
     font-family: 'Roboto Condensed'
 }
 
-li:hover{
+.bt:hover{
     cursor: pointer;
 }
 
@@ -124,6 +128,16 @@ li:hover{
     background: #fff;
     color:black;
 }
+
+
+.Rules{
+    margin-top:10px;
+    font-family: 'Raleway';
+    float: left;
+    width:75%;
+    margin-left:30px;
+}
+
 
 .rgbtn{
     margin-top:75px;
@@ -148,10 +162,14 @@ li:hover{
     margin-left:100px;
 }
 .fb{
-    margin-left:550px;
+    margin-left:520px;
 }
 
-@media (min-device-width:320px) and (max-device-width:374px){
+.tel{
+    margin-left:10px;
+}
+
+@media (min-device-width:320px) and (max-device-width:768px){
 
     .eventImg{
         /* margin-left:2px; */
@@ -177,9 +195,9 @@ li:hover{
 
     .nav span{
         padding:15px;
-        background: rgba(0,0,0);
+        border-radius:20%;
         color:#fff;
-        font-family: 'Roboto Condensed'
+        font-family: 'Roboto Condensed';
     }
 
     .nav span:hover{
@@ -190,12 +208,12 @@ li:hover{
         background: #fff;
         color:black;
     }
-
+/* 
     .content{
         position: relative;
-        top:300px;
+        top:30px;
         float: left;
-    }
+    } */
 
     .eventHead{
         padding-bottom: -50px;

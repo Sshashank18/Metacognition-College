@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="events.css">
     
@@ -32,7 +35,7 @@
         
         <!-- Cards -->
         <div class="cardContainer">
-            <a href="#cultural">
+            <a href="#coding">
                 <div class="container">
                     <!-- <div class="left"></div> -->
                     <!-- <div class="right"></div> -->
@@ -42,7 +45,7 @@
                     </div>
                 </div>
             </a>
-            <a href="#tech">
+            <a href="#creative">
                 <div class="container">
                     <!-- <div class="left"></div> -->
                     <!-- <div class="right"></div> -->
@@ -52,7 +55,7 @@
                     </div>
                 </div>
             </a>
-            <a href="#cultural">
+            <a href="#gaming">
                 <div class="container">
                     <!-- <div class="left"></div> -->
                     <!-- <div class="right"></div> -->
@@ -62,7 +65,7 @@
                     </div>
                 </div>
             </a>
-            <a href="#tech">
+            <a href="#funEvents">
                 <div class="container">
                     <!-- <div class="left"></div> -->
                     <!-- <div class="right"></div> -->
@@ -72,7 +75,7 @@
                     </div>
                 </div>
             </a>
-            <a href="#cultural">
+            <a href="#electro">
                 <div class="container">
                     
                     <img src="Images/electronics.png" class="eventImg" alt="Electronics">
@@ -100,17 +103,17 @@
         </div>
         <div class="choice">
             <ul class="list">
-                <li class="btev1t selected"><h4 >CodeMatics</h4></li>
-                <li class="btev2t"><h4 >Codewar</h4></li>
-                <li class="btev3t"><h4 >Bug Hunt</h4></li>
-                <li class="btev4t"><h4 >DaVinci Code</h4></li>
+                <li class="bt btev1t selected"><h4 >CodeMatics</h4></li>
+                <li class="bt btev2t"><h4 >Codewar</h4></li>
+                <li class="bt btev3t"><h4 >Bug Hunt</h4></li>
+                <li class="bt btev4t"><h4 >DaVinci Code</h4></li>
                 
             </ul>
         </div>
         <div class="midDivider">
             
         </div>
-
+        
         <div class="content event1t">
             <h3 class="contentHead">CodeMatics</h3>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -163,15 +166,14 @@
         </div>
         <div class="choice">
             <ul class="list creat">
-                <li class="btev1c selected"><h4  >Photoshop</h4></li>
-                <li class="btev2c"><h4 >Pic-a-mania</h4></li>
+                <li class="bt btev1c selected"><h4  >Photoshop</h4></li>
+                <li class="bt btev2c"><h4 >Pic-a-mania</h4></li>
             </ul>
         </div>
-        <div class="midDivider">
-            
-        </div>
-
+        
         <div class="content event1c">
+            <div class="midDivider"></div>
+            
             <h3 class="contentHead">Photoshop</h3>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
@@ -182,13 +184,40 @@
         </div>
         
         <div class="content event2c" hidden>
-            <h3 class="contentHead">Pic-a-mania</h3>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
-            printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-            <div class="price">₹50</div>
+            <div class="midDivider"></div>
             
-            <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
+            <h3 class="contentHead">Pic-a-mania</h3>
+            
+            <div class="Rules">
+                <h5 class="smallHead"><u>DESCRIPTION:</u></h5>
+                The participants will be provided with topics at the start of the event and are required to click pictures related to any of the given topics. They will submit their entries with the topic name and a unique caption for each photo within the given time duration.
+                
+                <br><br>
+                <h5 class="smallHead"><u> Rules:</u></h5>
+                
+                <ol type="i">
+                    <li>Single participant is allowed(Solo-event).</li>
+                    <li>Four topics will be given to each participant.</li>
+                    <li>Three entries per participant are to be submitted. </li>
+                    <li>Time-duration for the event is 30 minutes.</li>
+                    <li>Pictures can be clicked using either a camera or a mobile phone.</li>
+                    <li>The picture should be clicked inside the campus.</li>
+                    <li>Entries must be original and not downloaded.</li>
+                    <li>Entries for the competition will only be accepted via email. </li>
+                    <li>Submissions will not be accepted once the deadline lapses.</li>
+                </ol>
+                
+                <h5 class="smallHead"><u>Judging Criteria:</u></h5>
+                <ol type="i">
+                    <li>Relevance of the entries submitted with the topics given.</li>
+                    <li>Photo-capturing skills.</li>
+                    <li>The caption added to each entry.</li>
+                </ol>
+                
+                <div class="price">₹50</div>
+                
+                <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
+            </div>
         </div>
         
     </div>
@@ -204,14 +233,14 @@
         </div>
         <div class="choice">
             <ul class="list">
-                <li class="btev1g selected"><h4  >FIFA</h4></li>
-                <li class="btev2g"><h4 >PUBG</h4></li>
+                <li class="bt btev1g selected"><h4  >FIFA</h4></li>
+                <li class="bt btev2g"><h4 >PUBG</h4></li>
             </ul>
         </div>
         <div class="midDivider">
             
         </div>
-     
+        
         <div class="content event1g">
             <h3 class="contentHead">FIFA</h3>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -247,16 +276,16 @@
         </div>
         <div class="choice">
             <ul class="list">
-                <li class="btev1f selected"><h4>Treasure Hunt</h4></li>
-                <li class="btev2f"><h4 >Escape Room</h4></li>
-                <li class="btev3f"><h4 >F.R.I.E.N.D.S quiz</h4></li>
-                <li class="btev4f"><h4 >E-Surfing</h4></li>
+                <li class="bt btev1f selected"><h4>Treasure Hunt</h4></li>
+                <li class="bt btev2f"><h4 >Escape Room</h4></li>
+                <li class="bt btev3f"><h4 >F.R.I.E.N.D.S quiz</h4></li>
+                <li class="bt btev4f"><h4 >E-Surfing</h4></li>
             </ul>
         </div>
         <div class="midDivider">
             
         </div>
-    
+        
         <div class="content event1f">
             <h3 class="contentHead">Treasure Hunt</h3>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -286,17 +315,17 @@
             
             <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
         </div>
-
+        
         <div class="content event4f" hidden>
-                <h3 class="contentHead">E-Surfing</h3>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
-                printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                <div class="price">₹50</div>
-                
-                <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
-            </div>
-
+            <h3 class="contentHead">E-Surfing</h3>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+            printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+            <div class="price">₹50</div>
+            
+            <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
+        </div>
+        
     </div>
     
     <!-- Electronics -->
@@ -308,73 +337,161 @@
                 <span class="btev2e"><h4 >Circuit Debugging</h4></span>
                 <span class="btev3e"><h4 >LFR</h4></span>
                 <span class="btev4e"><h4 >Roborace</h4></span>
-                    
-                </div>
-            </div>
-            <div class="choice">
-                <ul class="list">
-                    <li class="btev1e selected"><h4 >EC quiz</h4></li>
-                    <li class="btev2e"><h4 >Circuit Debugging</h4></li>
-                    <li class="btev3e"><h4 >LFR</h4></li>
-                    <li class="btev4e"><h4 >Roborace</h4></li>
-                </ul>
-            </div>
-            <div class="midDivider">
                 
             </div>
-            
-            <div class="content event1e">
-                <h3 class="contentHead">EC Quiz</h3>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
-                printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                <div class="price">₹50</div>
-                
-                <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
-            </div>
-            
-            <div class="content event2e" hidden>
-                <h3 class="contentHead">Circuit Debugging</h3>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
-                printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                <div class="price">₹50</div>
-                
-                <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
-            </div>
-            
-            <div class="content event3e" hidden>
-                <h3 class="contentHead">LFR</h3>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
-                printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                <div class="price">₹50</div>
-                <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
-            </div>
-
-            <div class="content event4e" hidden>
-                <h3 class="contentHead">Roborace</h3>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
-                printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                <div class="price">₹50</div>
-                <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
-            </div>
-
-
+        </div>
+        <div class="choice">
+            <ul class="list">
+                <li class="bt btev1e selected"><h4 >EC quiz</h4></li>
+                <li class="bt btev2e"><h4 >Circuit Debugging</h4></li>
+                <li class="bt btev3e"><h4 >LFR</h4></li>
+                <li class="bt btev4e"><h4 >Roborace</h4></li>
+            </ul>
         </div>
         
-        <!-- CONTACT -->
-        <div class="contact">
-            <!-- <svg class="bottom-triangle" preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0 L50 100 L100 0 Z" fill="#f5f5f5" stroke="#f5f5f5"></path>
-            </svg> -->
-            <br><br>
+        <div class="content event1e">
+            
+            <div class="midDivider"></div>
+            <h3 class="contentHead">EC Quiz</h3>
+            
+            <div class="Rules">
+                <h5 class="smallHead"><u>DESCRIPTION:</u></h5>
+                The event will consist of basic questions from Electronics which would be conducted in 2 rounds. The students can participate in a team of two.
+                <br><br>
+                <h5 class="smallHead"><u> Rules:</u></h5>
+                
+                <h5 class="smallHead"> Round 1:</h5>
+                
+                <ol type="i">
+                    <li>This round will be basic pen and paper / PC based round which would test the basic electronics knowledge of the participants.</li>
+                    <li>It would consist of 20 questions.</li>
+                    <li>There would be -1 marks for incorrect answer.</li>
+                    <li>The top 5 participants/teams would be eligible for the next round.</li>
+                </ol>
+                <h5 class="smallHead"> Round 2:</h5>
+                <ol type="i">
+                    <li>This will be a rapid-fire round.</li>
+                    <li>It will have 5 rapid-fire questions.</li>
+                    <li>For each successive question, there would be betting of points from 10 points onwards.</li>
+                    <li>The minimum bid should be at least 10 points more than the previous bid.</li>
+                    <li>For each correct answer, the participant(s) get a score equal to the bid points.</li>
+                </ol>
+                <div class="price">₹50</div>
+                
+                <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
+            </div>
+        </div>
+        
+        <div class="content event2e" hidden>
+            <div class="midDivider"></div>
+            <h3 class="contentHead">Circuit Debugging</h3>
+            
+            <div class="Rules">
+                <h5 class="smallHead"><u>DESCRIPTION:</u></h5>
+                So, you think you are in love with circuits and designing? Well, if yes then we are here to test it. Come show us your interest in circuits and debug that we give you. And if you are successful at it, we have something exciting that waits for you. Unveil the excitement. Debug with joy.
+                <br>
+                <h5 class="smallHead"><u> Rules:</u></h5>
+                <br>
+                <h5 class="smallHead"> Round 1:</h5>
+                <ul>
+                    <li> For the first round, you will be given few circuits each with just one error.</li>
+                    <li> This is a paper-based round.</li>
+                    <li>You will be required to detect the error within the given time limit.</li>
+                </ul>
+                <h5 class="smallHead"> Round 2:</h5>
+                <ul>
+                    <li>The teams qualifying for 2nd round will be given another circuit to debug.</li>
+                    <li>This round will be implemented on bread-board.</li>
+                    <li>This time the circuits may contain multiple errors.</li>
+                    <li>Each error would have different weightage for marks.</li>
+                    <li>Also, for each wrong answer negative marks will be given.</li>
+                </ul>
+                Note:<br>
+                • The winning team will be decided on the basis of 2nd round.
+                • Participation can be done as a team of 2 students or singles as well.
+                <div class="price">₹50</div>
+                
+                <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
+            </div>
+        </div>    
+        
+        <div class="content event3e" hidden>
+            <div class="midDivider lfrmid"></div>
+            <h3 class="contentHead">LFR</h3>
+            
+            <div class="Rules">
+                <h5 class="smallHead"><u>DESCRIPTION:</u></h5>
+                
+                
+                The objective of this contest is for a robot to follow a black line on a white background without losing the line and navigating several 90 degree turns. The robot to complete the course in the shortest period of time while accurately tracking the course line from start to the finish wins.
+                <br>
+                <h5 class="smallHead"><u> Rules:</u></h5>
+                <ol>
+                    <li>Size and Weight Limits: Dimensional and weight limits for robots shall be strictly enforced. Robots must have passed inspection prior to competing. The bots should not exceed the breadth of 25 cm.</li>
+                    <li>Course Time: Time is measured from the time robot crosses the starting line until the time it crosses the finish line. A robot losing deemed to have 90-degree the line when the forward most wheel, track, or leg of the robot contacts or crosses over the line.</li>
+                    <li>Time Limit: A maximum of 3 minutes is allowed for a robot to complete the course. A robot that cannot complete the course in the allotted time shall be disqualified.</li>
+                    <li>Timekeeping: Time shall be measured by an electronic gate system or by a judge with a stopwatch, based on the availability of equipment. In either case the recorded time shall be final.</li>
+                    <li>Autonomous Control: Once a robot has crossed the starting line it must remain fully autonomous otherwise it will be disqualified.</li>
+                    <li>Arena Edges: A robot that wanders off of the arena surface will be disqualified. A robot shall be deemed to have left the arena when any wheel, leg or track has moved completely off the arena surface.</li>
+                    <li>Losing the Line: Any robot that loses the line course must reacquire the line at the point where it was lost, or at any earlier (e.g. already traversed) point.</li>
+                    <li>Second Attempt: Any robot that loses the line course and fails to reacquire will be allowed a single reattempt. The robot must start the course again from the beginning and if it loses the line course on its second attempt it will be disqualified.</li>
+                    <li>Second Attempt: Any robot that loses the line course and fails to reacquire will be allowed a single reattempt. The robot must start the course again from the beginning and if it loses the line course on its second attempt it will be disqualified.</li>
+                    <li>Power of Officials: The decisions of all officials regarding these rules and the conduct of the event shall be final.</li>
+                </ol>
+                
+                <h5 class="smallHead"><u>Course Specifications:</u></h5>
+                The line following course shall traverse a white paper rectangle, 44" wide and 96" long. The line shall be a black, 1/2" wide line traversing the arena from end to end. There shall be no crossovers (e.g. places where the line crosses itself). Switchbacks and hairpins are possible, but the adjacent sections of the line shall be no closer together than 15cm when measured from the centre of each line. The line course shall have 1 or more sharp right-angle, but no angle will be greater than 90 degrees.
+                <br>
+                Team up to 4 members.
+                <div class="price">₹50</div>
+                
+                <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
+            </div>
+        </div>
+        
+        
+        <div class="content event4e" hidden>
+            <div class="midDivider"></div>
+            <h3 class="contentHead">Roborace</h3>
+            <div class="Rules">
+                <h5 class="smallHead"><u>DESCRIPTION:</u></h5>
+                The race will be organized in two stages-: 1. Drag Race 2. Track Race<br>
+                Drag Race: -The race will be simple and all the participants will take part individually one by one. The top 70 percentile participants will go in the second round. The race should be completed in minimum time with the track being followed.<br>
+                Track Race: - The race should be completed in a max. Time of 4min 30 seconds. On track repair time is 1:30 min with time not to be included in the race time. Maximum 13 touches are allowed on the track for bot. Skipping a checkpoint will add 20 seconds to your race time completion. Maximum retries at a checkpoint are 3. Each hand touch for a bot will add 3 seconds to your time.<br>
+                <h5 class="smallHead"><u> Rules:</u></h5>
+                <ol>
+                    <li>The bot’s breadth should not exceed 25 cm.</li>
+                    <li>The input supply voltage to the bot should not exceed 14.8 volts.</li>
+                    <li>Bots should not exceed a total of 6 tyres.</li>
+                    <li>Bots can be both wired or wireless.</li>
+                    <li>Caterpillar wheels will be appreciated.</li>
+                    <li>The bots will go under an inspection and no offence should be taken.</li>
+                    <li>Make your bots waterproof, the track may or may not contain water.</li>
+                    <li>If there will be any change or modification in any rule it will be told to the participants before the commencement of race.</li>
+                </ol>
+                Team up to 4 members.
+                <div class="price">₹50</div>
+                
+                <div class="footer"><button class="btn btn-danger rgbtn">REGISTER</button></div>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    
+    <!-- CONTACT -->
+    <!-- <div class="contact"> -->
+        <!-- <svg class="bottom-triangle" preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0 L50 100 L100 0 Z" fill="#f5f5f5" stroke="#f5f5f5"></path>
+        </svg> -->
+        <!-- <br><br>
             <h1 class="head">CONTACT</h1>
             <br>
             <a href="https://www.facebook.com/teamenthiran/"><img class="fb" src="Images/fb.png" width="85px"></a>
             <a href="https://www.instagram.com/teamenthiran/"><img src="Images/insta.png" width="50px"></a>
-        </div>
+            <a href="tel:9917125487" target="__blank"><img src="Images/call.png" class="tel" width="55px"></a>
+        </div> -->
         
         <script src="events.js"></script>
         

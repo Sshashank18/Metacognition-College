@@ -56,6 +56,7 @@ event4t.click(()=>{
     evcontent3t.attr('hidden','');
     evcontent4t.removeAttr("hidden");
     evcontent1t.attr('hidden','');
+    evcontent2t.attr('hidden','');
 })
 
 event3t.click(()=>{
@@ -175,7 +176,6 @@ var $li = $('.list li').click(function() {
 var $span = $('.nav span').click(function() {
     $span.removeClass('selected');
     $(this).addClass('selected');
-
 });
 
 

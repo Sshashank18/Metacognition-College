@@ -103,8 +103,8 @@ li{
     background-repeat: no-repeat;
     background-size: cover;
 
-    padding-left:5px;
-    padding-right:5px;
+    padding-left:10px;
+    padding-right:10px;
 }
 
 #about{
@@ -112,7 +112,7 @@ li{
 }
 
 #teamEnthiran{
-    height: 700px;
+    height: 1150px;
 }
 
 .aboutImg > img{
@@ -239,9 +239,9 @@ li{
     margin-left:10px;
 }
 
-/* .eventImg{
+.eventImg{
     width:320px;height:320px;
-} */
+}
 
 
 .carousel-item,
@@ -251,10 +251,14 @@ li{
   width: auto;
 }
 
-@media (min-device-width:320px) and (max-device-width:374px){
+@media (min-device-width:320px) and (max-device-width:423px){
 
     .box{
-        height:660px;
+        height:1300px;
+    }
+
+    #teamEnthiran{
+        height:1440px;
     }
 
     .container{
@@ -266,7 +270,7 @@ li{
         margin-left:10px;
     }
 
-    .left{
+    /* .left{
         padding-left:15px;
         padding-right:17px;
         left:18px;
@@ -276,7 +280,7 @@ li{
         padding-left:17px;
         padding-right:15px;
         left:267px;
-    }
+    } */
 
     .text-block{
         left:33px;
@@ -291,8 +295,17 @@ li{
     }
 }
 
+@media (min-device-width:424px) and (max-device-width:768px){
+    .eventImg{
+        margin-left:25px;
+    }
 
-@media (min-device-width:768px) and (max-device-width:1023px){
+    .fb{
+        margin-left:100px;
+    }
+}
+
+/* @media (min-device-width:768px) and (max-device-width:1023px){
     #navbar{
         width:360px;
     }
@@ -315,7 +328,7 @@ li{
         margin-left:50px;
     }
 
-    .left{
+    /* .left{
         padding-left:15px;
         padding-right:17px;
         left:59px;
@@ -325,18 +338,18 @@ li{
         padding-left:17px;
         padding-right:15px;
         left:317px;
-    }
+    } */
 
-    .text-block{
+    /* .text-block{
         left:80px;
     }
 
     .membox{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: wrap; */
         /* justify-content: space-between; */
-    }
+    /* }
  
     .memContainer{
         width:190px;
@@ -366,13 +379,13 @@ li{
     }
     
     #teamEnthiran{
-        height:500px;
+        height:1200px;
     }
 
     .fb{
         margin-left:300px;
     }
-}
+} */ 
 
 @media (min-device-width:1024px) and (max-device-width:1439px){
     #navbar{
@@ -439,7 +452,7 @@ li{
     }
 
     .content{
-        font-size:26px;
+        font-size:21px;
     }
 
     #about{
@@ -452,7 +465,7 @@ li{
     }
     
     #teamEnthiran{
-        height:500px;
+        height:600px;
     }
 
     #events{
@@ -464,7 +477,7 @@ li{
     }
 }
 
-@media (min-device-width:1440px) and (max-device-width:2559px){
+/* @media (min-device-width:1440px) and (max-device-width:2559px){
     #navbar{
         width:360px;
     }
@@ -514,8 +527,8 @@ li{
         flex-wrap: wrap;
         height: 450px;
         /* justify-content: space-between; */
-    }
- 
+    /* }
+
     .memContainer{
         width:350px;
     }
@@ -555,4 +568,4 @@ li{
         margin-left:630px;
     }
 }
-
+ */ 
