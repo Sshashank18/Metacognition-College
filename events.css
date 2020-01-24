@@ -6,7 +6,9 @@ body,html{
     background-attachment: fixed;
     width: 100%;
 }
-
+.price{
+    font-size:25px;
+}
 
 .home{
     float: left;

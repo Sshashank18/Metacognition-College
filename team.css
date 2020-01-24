@@ -46,11 +46,13 @@ body,html{
 }
 
 .evH{
-    height:690px;
+    height:720px;
     padding-top: 40px;
 }
 
-
+.alumni{
+    height:900px;
+}
 
 .member{
     border-radius:100%;
@@ -60,8 +62,8 @@ body,html{
 
 
 .eH{
-    width:230px;
-    height:200px;
+    width:250px;
+    height:250px;
 }
 
 .name{
@@ -80,11 +82,19 @@ body,html{
 
 @media  (min-device-width:320px) and (max-device-width:425px){
     .clubs{
-        height:750px;
+        height:760px;
         padding-top:50px;
     }
 
     .evH{
         height:3070px;
+    }
+
+    .web{
+        height:450px;
+    }
+
+    .alumni{
+        height:3270px;
     }
 }

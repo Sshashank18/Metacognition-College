@@ -108,7 +108,7 @@ li{
 }
 
 #about{
-    height:1250px;
+    height:1300px;
 }
 
 #teamEnthiran{
@@ -212,12 +212,10 @@ li{
 }
 
 
-.carousel-item,
-.carousel-inner,
-.carousel-inner img {
-  height: 100%;
-  width: auto;
-}
+.carousel-inner > .carousel-item > img {
+    width:320px;
+    height:360px;
+  }
 
 @media (min-device-width:320px) and (max-device-width:423px){
 
@@ -227,6 +225,10 @@ li{
 
     #teamEnthiran{
         height:1440px;
+    }
+
+    #about{
+        height:1500px;
     }
 
     .container{
@@ -245,6 +247,8 @@ li{
     .tel{
         margin-left:10px;
     }
+
+
 }
 
 @media (min-device-width:424px) and (max-device-width:768px){
@@ -317,6 +321,11 @@ li{
     }
 
     .fb{
-        margin-left:560px;
+        margin-left:630px;
     }
+
+    .carousel-inner > .carousel-item > img {
+        width:1400px;
+        height:360px;
+      }
 }
