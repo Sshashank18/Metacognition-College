@@ -78,7 +78,7 @@ li{
 
 .box1 {
 
-    background-image: url("Images/background.png");
+    background-image: url("Images/background2.jpeg");
     height: 640px;
     width: 100%;
     /* background-color:rgb(211, 17, 245); */
@@ -275,6 +275,10 @@ li{
         margin-top:5px;
         margin-right:5px;
         margin-bottom:15px;
+    }
+
+    .box1{
+        background-image: url("Images/background.png");
     }
 
     .cardContainer{
