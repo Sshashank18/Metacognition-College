@@ -83,7 +83,7 @@ ul{
     list-style: none;
 }
 
-li{
+.navHit{
     margin:0px 15px 0px 10px;
     font-family: 'Bangers';
     font-size: 50px;
