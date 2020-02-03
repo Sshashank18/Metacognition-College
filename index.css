@@ -219,6 +219,15 @@ li{
 
 @media (min-device-width:320px) and (max-device-width:423px){
 
+    .teamImg > img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 298px;
+        height:300px;
+    }
+    
+
     .box{
         height:1300px;
     }
