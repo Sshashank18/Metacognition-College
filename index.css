@@ -295,7 +295,7 @@ li{
 }
 
 
-@media (min-device-width:1024px) and (max-device-width:1439px){
+@media (min-device-width:1024px){
     #navbar{
         width:360px;
     }
