@@ -219,7 +219,13 @@ li{
 
 @media (min-device-width:320px)and (max-device-width:374px){
     .box1{
-        background-size: 350px 610px;
+        background-size: 360px 610px;
+    }
+}
+
+@media(min-device-width:375px) and (max-device-width:424px){
+    .box1{
+        background-size: 410px 610px;
     }
 }
 
