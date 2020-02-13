@@ -221,11 +221,26 @@ li{
     .box1{
         background-size: 360px 610px;
     }
+    #prize img{
+        width:295px;
+
+    }
+    #prize{
+        height:800px;
+    }
 }
 
 @media(min-device-width:375px) and (max-device-width:424px){
     .box1{
         background-size: 410px 610px;
+    }
+
+    #prize img{
+        width:355px;
+
+    }
+    #prize{
+        height:800px;
     }
 }
 
@@ -280,6 +295,15 @@ li{
     .fb{
         margin-left:100px;
     }
+
+    #prize img{
+        width:405px;
+
+    }
+    #prize{
+        height:800px;
+    }
+
 }
 
 @media (min-device-width:768px) and (max-device-width:1023px){
@@ -298,6 +322,14 @@ li{
     .fb{
         margin-left:270px;
     }
+    #prize img{
+        width:750px;
+        height:750px;
+
+    }
+    #prize{
+        height:900px;
+    }
 }
 
 
@@ -314,6 +346,16 @@ li{
         margin-top:5px;
         margin-right:5px;
         margin-bottom:15px;
+    }
+
+    #prize{
+        height:800px;
+        padding-left:610px;
+    }
+
+    #p-head{
+        text-align:center;
+        margin-right:550px;
     }
 
     .box1{
