@@ -228,6 +228,11 @@ li{
     #prize{
         height:800px;
     }
+    li{
+       
+        font-size: 33px;
+        text-align: center;
+    }
 }
 
 @media(min-device-width:375px) and (max-device-width:424px){
@@ -246,6 +251,11 @@ li{
         width:370px;
         height:360px;
       }
+      li{
+       
+        font-size: 34px;
+        text-align: center;
+    }
 }
 
 @media (min-device-width:320px) and (max-device-width:423px){
@@ -311,6 +321,11 @@ li{
         width:405px;
         height:260px;
       }
+      li{
+       
+        font-size: 33px;
+        text-align: center;
+    }
 
 }
 
