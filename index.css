@@ -213,8 +213,8 @@ li{
 
 
 .carousel-inner > .carousel-item > img {
-    width:320px;
-    height:360px;
+    width:300px;
+    height:300px;
   }
 
 @media (min-device-width:320px)and (max-device-width:374px){
@@ -242,6 +242,10 @@ li{
     #prize{
         height:800px;
     }
+    .carousel-inner > .carousel-item > img {
+        width:370px;
+        height:360px;
+      }
 }
 
 @media (min-device-width:320px) and (max-device-width:423px){
@@ -303,6 +307,10 @@ li{
     #prize{
         height:800px;
     }
+    .carousel-inner > .carousel-item > img {
+        width:405px;
+        height:260px;
+      }
 
 }
 
@@ -411,7 +419,7 @@ li{
     }
 
     .carousel-inner > .carousel-item > img {
-        width:1400px;
+        width:1650px;
         height:360px;
       }
 }
