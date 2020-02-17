@@ -301,7 +301,7 @@ li{
 
 }
 
-@media (min-device-width:424px) and (max-device-width:767px){
+@media (min-device-width:423px) and (max-device-width:767px){
     .eventImg{
         margin-left:25px;
     }
@@ -322,7 +322,6 @@ li{
         height:260px;
       }
       li{
-       
         font-size: 33px;
         text-align: center;
     }
